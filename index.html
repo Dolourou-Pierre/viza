@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>VIZA · Agence de communication 360° et imprimerie à Abidjan</title>
+<meta name="description" content="VIZA, agence de communication 360° et imprimerie à Abidjan : impression de tous supports, branding, affichage publicitaire, couverture médias, campagnes et réseaux sociaux. Devis sous 24 h.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CI">
+<meta property="og:site_name" content="VIZA">
+<meta property="og:title" content="VIZA · Agence de communication 360° et imprimerie à Abidjan">
+<meta property="og:description" content="VIZA, agence de communication 360° et imprimerie à Abidjan : impression de tous supports, branding, affichage publicitaire, couverture médias, campagnes et réseaux sociaux. Devis sous 24 h.">
+<meta name="theme-color" content="#151A22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="canonical" href="https://dolourou-pierre.github.io/viza/">
+<meta property="og:url" content="https://dolourou-pierre.github.io/viza/">
+<meta property="og:image" content="https://dolourou-pierre.github.io/viza/images/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/icon-180.png">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<style id="site-css">
+/* Mise en page : site multi-pages clair et aéré, bandes graphite pour le rythme, orange réservé à l'action et à la flamme du logo */
+:root{
+  --ink:#151A22; --ink-2:#1F2530; --ink-3:#2D3442;
+  --paper:#F4F3EF; --paper-2:#EAE8E1; --white:#FBFBF8;
+  --orange:#FF5B1F; --orange-dk:#C9400F; --lagune:#0E7A6E; --lagune-lt:#E3F0EE;
+  --muted:#5D6270; --muted-dk:#A9AEB9; --line:#DDDAD2;
+  --display:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;
+  --text:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --max:1200px; --ease:cubic-bezier(.2,.7,.1,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:80px}
+body{background:var(--paper);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:90;background:var(--white)}
+a{color:inherit}
+img,svg{max-width:100%}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.04;letter-spacing:-.02em;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2.5px solid var(--orange);outline-offset:3px;border-radius:6px}
+.eyebrow{font-size:13.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lagune);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--orange)}
+.dark .eyebrow,.photo-bg .eyebrow{color:#7FD1C6}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:999px;font:700 15.5px var(--text);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none;transition:transform .25s var(--ease)}
+.btn:hover svg.arr{transform:translateX(4px)}
+.btn-or{background:var(--orange);color:#fff}
+.btn-or:hover{background:var(--orange-dk)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:#000}
+.btn-line{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-line:hover{border-color:var(--ink)}
+.photo-bg .btn-line{border-color:rgba(255,255,255,.45);color:#fff}
+.photo-bg .btn-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+/* En-tête */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:80;background:rgba(251,251,248,.92);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:74px}
+.brand{display:flex;align-items:center;text-decoration:none;color:var(--ink);flex:none}
+.brand svg{height:34px;width:auto}
+.menu{display:flex;gap:2px;margin:0 0 0 auto;padding:0;list-style:none}
+.menu a{display:block;padding:9px 15px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;color:var(--muted);transition:color .2s,background .2s}
+.menu a:hover{color:var(--ink)}
+.menu a[aria-current="page"]{color:var(--ink);background:var(--paper-2)}
+.top .btn{height:44px;padding:0 20px;font-size:14.5px}
+.burger{display:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--ink);cursor:pointer;position:relative;margin-left:auto}
+.burger i{position:absolute;left:13px;right:13px;height:2px;background:#fff;transition:transform .35s var(--ease),top .35s var(--ease)}
+.burger i:first-child{top:17px}.burger i:last-child{top:25px}
+.burger[aria-expanded="true"] i:first-child{top:21px;transform:rotate(45deg)}
+.burger[aria-expanded="true"] i:last-child{top:21px;transform:rotate(-45deg)}
+@media (max-width:1000px){.menu,.top .btn{display:none}.burger{display:block}}
+.drawer{position:fixed;inset:0;z-index:70;background:var(--ink);color:#fff;padding:calc(100px + env(safe-area-inset-top,0px)) max(24px,env(safe-area-inset-right,0px)) calc(32px + env(safe-area-inset-bottom,0px)) max(24px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;justify-content:space-between;opacity:0;visibility:hidden;transform:translateY(-12px);transition:opacity .35s,transform .35s var(--ease),visibility .35s}
+.drawer.open{opacity:1;visibility:visible;transform:none}
+.drawer ul{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.drawer ul a{font-family:var(--display);font-weight:700;font-size:clamp(32px,9vw,46px);text-decoration:none;display:block;padding:4px 0}
+.drawer ul a[aria-current="page"]{color:var(--orange)}
+.drawer .d-foot{display:grid;gap:4px;color:var(--muted-dk);font-size:15px}
+.drawer .btn{margin-top:20px}
+.top.menu-open{background:var(--ink);border-color:var(--ink)}
+.top.menu-open .brand{color:#fff}
+.top.menu-open .burger{background:var(--orange)}
+/* Pages */
+.page{display:none}
+.page.on{display:block;animation:pagein .55s var(--ease) both}
+@keyframes pagein{from{opacity:0;transform:translateY(14px)}}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}}
+section.s{padding-block:clamp(72px,9vw,120px)}
+.dark{background:var(--ink);color:#E6E8EC}
+.dark h2,.dark h3{color:#fff}
+.white{background:var(--white)}
+.s-head{display:grid;grid-template-columns:1.1fr .9fr;gap:24px 64px;align-items:end;margin-bottom:52px}
+.s-head h2{font-size:clamp(32px,4.2vw,54px);margin-top:16px}
+.s-head p{color:var(--muted);font-size:18px}
+.dark .s-head p{color:var(--muted-dk)}
+@media (max-width:860px){.s-head{grid-template-columns:1fr}}
+@supports (animation-timeline:view()){.rv{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 60%}@keyframes rv{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}}
+/* Fonds image */
+.photo-bg{position:relative;color:#fff;overflow:hidden;background:linear-gradient(90deg,rgba(21,26,34,.94) 0%,rgba(21,26,34,.78) 45%,rgba(21,26,34,.35) 100%),var(--bg,none) center/cover no-repeat,radial-gradient(circle at 82% 28%,rgba(14,122,110,.6),transparent 55%),radial-gradient(circle at 96% 92%,rgba(255,91,31,.32),transparent 42%),#151A22}
+.photo-bg .ghost{position:absolute;right:-4%;bottom:-12%;width:min(620px,60%);color:#fff;opacity:.06;pointer-events:none}
+.phead .wrap{position:relative;padding-block:clamp(96px,12vw,150px) clamp(72px,9vw,110px)}
+.phead h1{font-size:clamp(40px,6vw,76px);margin-top:18px;max-width:14em;color:#fff;animation:fade .8s var(--ease) both}
+.phead p.intro{margin-top:22px;font-size:19px;color:#D5D9E0;max-width:36em;animation:fade .8s .12s var(--ease) both}
+.crumb{font-size:14px;color:#A9AEB9;display:flex;gap:8px}
+.crumb a{text-decoration:none}
+.crumb a:hover{color:#fff}
+/* Hero */
+.hero .wrap{position:relative;display:flex;align-items:center;min-height:min(700px,88vh);padding-block:80px}
+.hero .txt{max-width:760px}
+.hero h1{font-size:clamp(48px,7.4vw,104px);font-weight:800;line-height:1;letter-spacing:-.035em;color:#fff;margin-top:22px}
+.hero h1 .l1{display:block;animation:fade .8s var(--ease) both}
+.rotor{display:inline-grid;vertical-align:bottom;background:var(--orange);color:#fff;border-radius:.16em .16em .16em 0;padding:0 .2em;height:1.1em;overflow:hidden;margin-top:.06em;transition:width .6s var(--ease);animation:fade .8s .15s var(--ease) both}
+.rotor span{grid-area:1/1;justify-self:start;line-height:1.1;white-space:nowrap;transform:translateY(110%);transition:transform .7s var(--ease)}
+.rotor span.cur{transform:none}
+.rotor span.out{transform:translateY(-110%)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:44px;animation:fade .8s .45s var(--ease) both}
+.hero .scroll{position:absolute;left:max(20px,env(safe-area-inset-left,0px));bottom:28px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#A9AEB9;display:flex;align-items:center;gap:10px}
+.hero .scroll::before{content:"";width:1px;height:34px;background:linear-gradient(#FF5B1F,transparent);animation:drip 2s ease-in-out infinite}
+@keyframes drip{50%{transform:translateY(8px)}}
+@media (max-width:700px){.hero .wrap{min-height:0;padding-block:72px 96px}}
+/* Bandeau défilant */
+.ticker{background:var(--orange);color:#fff;overflow:hidden;padding-block:11px}
+.ticker .run{display:flex;width:max-content;animation:tick 45s linear infinite}
+.ticker span{font-weight:600;font-size:14.5px;letter-spacing:.02em;white-space:nowrap;display:flex;align-items:center;gap:22px;padding-right:22px}
+.ticker span::after{content:"";width:5px;height:5px;border-radius:50%;background:#fff;opacity:.7}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* Visuels : photo ou illustration */
+.vis img,.vis svg{width:100%;height:100%;display:block;object-fit:cover}
+/* Services (accueil) */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.svc-card{grid-column:span 2;background:var(--white);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);transition:transform .35s var(--ease),box-shadow .35s}
+.svc-card:hover{transform:translateY(-6px);box-shadow:0 26px 50px -30px rgba(21,26,34,.45)}
+.svc-card.wide{grid-column:span 3}
+.svc-card .vis{aspect-ratio:16/10;overflow:hidden}
+.svc-card.wide .vis{aspect-ratio:16/9}
+.svc-card .vis>*{transition:transform .6s var(--ease)}
+.svc-card:hover .vis>*{transform:scale(1.04)}
+.svc-card .body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.svc-card h3{font-size:23px}
+.svc-card p{color:var(--muted);font-size:15.5px}
+.svc-card .more{margin-top:auto;padding-top:8px;font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:8px;color:var(--orange-dk)}
+.svc-card .more svg{width:16px;height:16px;transition:transform .25s}
+.svc-card:hover .more svg{transform:translateX(4px)}
+@media (max-width:900px){.bento{grid-template-columns:1fr 1fr}.svc-card,.svc-card.wide{grid-column:span 1}}
+@media (max-width:560px){.bento{grid-template-columns:1fr}}
+/* Partenaires */
+.trust{background:var(--white);border-block:1px solid var(--line)}
+.trust .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:32px}
+.trust h2{font-size:clamp(26px,3vw,36px);margin-top:14px}
+.trust .head p{color:var(--muted);font-size:16px;max-width:30em}
+.strip{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.strip .run{display:flex;gap:16px;width:max-content;animation:tick 50s linear infinite}
+.strip:hover .run{animation-play-state:paused}
+.logo-slot{width:200px;height:100px;flex:none;border-radius:18px;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;transition:border-color .3s,background .3s}
+.logo-slot:hover{border-color:var(--ink);background:#fff}
+.logo-slot img{max-width:70%;max-height:60%;object-fit:contain;filter:grayscale(1);opacity:.75;transition:filter .3s,opacity .3s}
+.logo-slot:hover img{filter:none;opacity:1}
+.logo-slot span{font-size:14px;font-weight:700;color:#8E929C;text-align:center;padding:0 12px}
+/* Méthode */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;list-style:none;padding:0;margin:0}
+.step{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:20px;padding:28px 24px;display:flex;flex-direction:column;gap:12px}
+.step .n{width:44px;height:44px;border-radius:12px;background:var(--orange);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:19px}
+.step h3{font-size:20px;color:#fff}
+.step p{color:var(--muted-dk);font-size:15.5px}
+.step .when{margin-top:auto;font-size:13px;font-weight:600;color:#7FD1C6}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.promises{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink)}
+.promise{padding:30px 28px 10px 0}
+.promise+.promise{padding-left:28px;border-left:1px solid var(--line)}
+.promise b{font-family:var(--display);font-size:clamp(44px,5vw,64px);font-weight:800;line-height:1;color:var(--orange);display:block}
+.promise h3{font-size:21px;margin-top:14px}
+.promise p{color:var(--muted);font-size:15.5px;margin-top:6px}
+@media (max-width:820px){.promises{grid-template-columns:1fr}.promise+.promise{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+.cta{background:var(--lagune);color:#fff;border-radius:28px;padding:clamp(36px,6vw,64px);display:grid;grid-template-columns:1.3fr auto;gap:28px;align-items:center;position:relative;overflow:hidden}
+.cta h2{font-size:clamp(30px,4vw,48px);color:#fff}
+.cta p{margin-top:12px;color:#D4ECE8;font-size:17px}
+.cta .btns{display:flex;flex-wrap:wrap;gap:12px;position:relative}
+.cta .btn-line{border-color:rgba(255,255,255,.35);color:#fff}
+.cta .btn-line:hover{border-color:#fff}
+.cta svg.deco{position:absolute;right:-30px;bottom:-40px;width:260px;opacity:.12;color:#fff;pointer-events:none}
+@media (max-width:800px){.cta{grid-template-columns:1fr}}
+/* L'agence */
+.manifesto{font-family:var(--display);font-weight:500;font-size:clamp(26px,3.3vw,42px);line-height:1.25;letter-spacing:-.02em;max-width:22em;margin-top:22px}
+.manifesto mark{background:none;color:var(--orange)}
+.founder{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.founder .portrait{aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:var(--ink)}
+.founder blockquote{margin:20px 0 0;font-family:var(--display);font-size:clamp(24px,2.6vw,32px);font-weight:500;line-height:1.3}
+.founder .who{margin-top:20px;font-weight:700}
+.founder .who span{display:block;font-weight:500;color:var(--muted)}
+.founder ul{margin:28px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.founder li{display:flex;gap:12px;align-items:flex-start}
+.founder li svg{width:22px;height:22px;flex:none;margin-top:2px}
+@media (max-width:860px){.founder{grid-template-columns:1fr}.founder .portrait{max-width:420px}}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.value{border-radius:22px;padding:32px 28px;background:var(--white);border:1px solid var(--line)}
+.value .ic{width:52px;height:52px;border-radius:14px;background:var(--lagune-lt);display:grid;place-items:center;margin-bottom:22px}
+.value .ic svg{width:26px;height:26px;stroke:var(--lagune);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.value h3{font-size:22px}
+.value p{color:var(--muted);margin-top:8px;font-size:15.5px}
+@media (max-width:820px){.values{grid-template-columns:1fr}}
+/* Services (page) */
+.svc-nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:32px}
+.svc-nav button{font:600 14.5px var(--text);padding:10px 16px;border-radius:999px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;cursor:pointer}
+.svc-nav button:hover{border-color:#fff}
+.svc-row{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-block:56px;border-bottom:1px solid var(--line)}
+.svc-row:nth-of-type(even) .vis{order:2}
+.svc-row .vis{border-radius:24px;overflow:hidden;aspect-ratio:4/3}
+.svc-row .num{font-family:var(--display);font-weight:800;font-size:15px;color:var(--orange)}
+.svc-row h2{font-size:clamp(30px,3.6vw,44px);margin-top:10px}
+.svc-row p.lead{color:var(--muted);font-size:17.5px;margin-top:16px}
+.svc-row ul{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.svc-row li{font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--white);border:1px solid var(--line)}
+.svc-row .act{margin-top:28px}
+@media (max-width:860px){.svc-row{grid-template-columns:1fr;gap:28px}.svc-row:nth-of-type(even) .vis{order:0}}
+.catalog{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,4vw,40px);margin-block:8px}
+.catalog h3{font-size:24px}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:5px;border-radius:999px;background:var(--paper);width:max-content;max-width:100%;margin:20px 0 22px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{font:600 14px var(--text);padding:10px 16px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff}
+.cat{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.item{border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:8px;animation:fade .45s var(--ease) both}
+.item h4{font-size:17px}
+.item p{font-size:14px;color:var(--muted)}
+.item .d{margin-top:auto;font-size:12.5px;font-weight:700;color:var(--lagune)}
+/* Réalisations */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{font:600 14.5px var(--text);padding:10px 17px;border-radius:999px;border:1.5px solid var(--line);background:var(--white);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.work{border-radius:22px;overflow:hidden;background:var(--white);border:1px solid var(--line);transition:transform .35s var(--ease),box-shadow .35s}
+.work:hover{transform:translateY(-6px);box-shadow:0 26px 50px -30px rgba(21,26,34,.45)}
+.work .vis{aspect-ratio:4/3;overflow:hidden;position:relative}
+.work .badge{position:absolute;top:12px;left:12px;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:rgba(251,251,248,.92);color:var(--ink)}
+.work .body{padding:20px 22px 22px}
+.work .cat-l{font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--lagune)}
+.work h3{font-size:20px;margin-top:6px}
+.work p{font-size:15px;color:var(--muted);margin-top:6px}
+@media (max-width:900px){.works{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.works{grid-template-columns:1fr}}
+.note{margin-top:28px;padding:18px 22px;border-radius:16px;background:var(--lagune-lt);color:#0B5A51;font-size:15px}
+/* FAQ */
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-weight:700;font-size:18.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{width:34px;height:34px;flex:none;border-radius:50%;background:var(--white);border:1px solid var(--line);position:relative;transition:background .3s,border-color .3s}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--ink);transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .35s var(--ease)}
+.faq details[open] summary i{background:var(--orange);border-color:var(--orange)}
+.faq details[open] summary i::before,.faq details[open] summary i::after{background:#fff}
+.faq details[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+.faq details p{padding:0 54px 24px 0;color:var(--muted);font-size:16.5px;white-space:pre-line}
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+.ccards{display:grid;gap:10px}
+.ccard{display:flex;gap:14px;align-items:center;padding:18px 20px;border-radius:18px;background:var(--white);border:1px solid var(--line)}
+.ccard .ic{width:44px;height:44px;border-radius:12px;background:var(--lagune-lt);display:grid;place-items:center;flex:none}
+.ccard .ic svg{width:22px;height:22px;stroke:var(--lagune);fill:none;stroke-width:1.8}
+.ccard small{display:block;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ccard b{font-size:16.5px;user-select:all}
+form.qf{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:clamp(22px,4vw,36px);display:grid;gap:18px}
+.qf h2{font-size:26px}
+.qf fieldset{border:0;padding:0;margin:0}
+.qf legend,.qf label.f{display:block;font-weight:700;font-size:14px;margin-bottom:8px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label{font-weight:600;font-size:14px;padding:9px 14px;border-radius:999px;border:1.5px solid var(--line);cursor:pointer;user-select:none;transition:background .2s,border-color .2s,color .2s}
+.opts label:hover{border-color:var(--ink)}
+.opts input:checked+label{background:var(--ink);border-color:var(--ink);color:#fff}
+.opts input:focus-visible+label{outline:2.5px solid var(--orange);outline-offset:2px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qf input[type=text],.qf input[type=tel],.qf select,.qf textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:13px 15px}
+.qf input:focus,.qf select:focus,.qf textarea:focus{border-color:var(--ink);background:#fff;outline:none}
+.qf textarea{min-height:120px;resize:vertical}
+.qf .err{color:#B42318;font-size:14px;font-weight:600;min-height:1.2em}
+.send{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.send small{color:var(--muted);font-size:13px}
+.result{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:clamp(22px,4vw,36px)}
+.result h2{font-size:24px}
+.result pre{white-space:pre-wrap;font:14px/1.55 ui-monospace,Menlo,monospace;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;margin:16px 0 20px;max-height:300px;overflow:auto}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+/* Pied de page */
+footer{background:var(--ink);color:#C9CDD5;padding-block:72px 32px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+footer .brand{color:#fff}
+footer .brand svg{height:40px}
+footer .pitch{margin-top:18px;max-width:22em;color:var(--muted-dk);font-size:15.5px}
+footer h4{font-family:var(--text);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-bottom:16px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;font-size:15px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--orange)}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:56px;padding-top:22px;border-top:1px solid var(--ink-3);font-size:13.5px;color:var(--muted-dk)}
+@media (max-width:860px){.f-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.f-grid{grid-template-columns:1fr}}
+.fab{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.45);transition:transform .25s var(--ease)}
+.fab:hover{transform:scale(1.07)}
+.fab svg{width:28px;height:28px}
+
+/* ===== CMS ===== */
+.cms-open-btn{position:fixed;left:calc(18px + env(safe-area-inset-left,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:120;display:flex;align-items:center;gap:10px;height:52px;padding:0 20px 0 16px;border-radius:999px;border:0;background:var(--ink);color:#fff;font:700 15px var(--text);cursor:pointer;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+.cms-open-btn svg{width:20px;height:20px}
+.cms-open-btn .dot{width:9px;height:9px;border-radius:50%;background:var(--orange)}
+body.cms-on{padding-right:min(480px,100%)}
+body.cms-on .fab,body.cms-on .cms-open-btn{display:none}
+@media (max-width:900px){body.cms-on{padding-right:0}}
+.cms{position:fixed;top:0;right:0;bottom:0;width:min(480px,100%);z-index:150;background:#fff;color:var(--ink);display:flex;flex-direction:column;box-shadow:-20px 0 60px -30px rgba(0,0,0,.4);font-family:var(--text);font-size:15px;line-height:1.45;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.cms[hidden]{display:none}
+.cms.peek{transform:translateX(calc(100% - 56px))}
+.cms-top{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.cms-top b{font-family:var(--display);font-size:19px;flex:1}
+.cms-ibtn{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center;color:var(--ink)}
+.cms-ibtn:hover{border-color:var(--ink)}
+.cms-ibtn svg{width:18px;height:18px}
+.cms-nav{display:flex;gap:6px;overflow-x:auto;padding:12px 16px;border-bottom:1px solid var(--line);scrollbar-width:thin}
+.cms-nav button{flex:none;font:600 13.5px var(--text);padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--muted)}
+.cms-nav button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.cms-body{flex:1;overflow-y:auto;padding:16px 16px 40px}
+.cms-banner{padding:12px 14px;border-radius:12px;background:#FFF3EC;color:#7A2E0B;font-size:14px;margin-bottom:14px;display:grid;gap:10px}
+.cms-banner .row{display:flex;gap:8px;flex-wrap:wrap}
+.cms-group{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;background:#fff}
+.cms-group>summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.cms-group>summary::-webkit-details-marker{display:none}
+.cms-group>summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s}
+.cms-group[open]>summary::after{transform:rotate(-135deg)}
+.cms-group>.in{padding:2px 16px 16px;display:grid;gap:14px}
+.cms-f{display:grid;gap:6px}
+.cms-f>label,.cms-f>.lab{font-weight:600;font-size:13.5px;color:var(--ink)}
+.cms-f .hint{font-size:12.5px;color:var(--muted)}
+.cms input[type=text],.cms textarea,.cms select{width:100%;font:inherit;font-size:15px;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px}
+.cms input[type=text]:focus,.cms textarea:focus,.cms select:focus{outline:none;border-color:var(--ink);background:#fff}
+.cms textarea{min-height:84px;resize:vertical}
+.cms-img{display:flex;gap:12px;align-items:center}
+.cms-img .th{width:96px;height:64px;border-radius:10px;background:var(--paper) center/cover no-repeat;border:1px solid var(--line);flex:none;display:grid;place-items:center;font-size:11px;color:var(--muted);text-align:center;overflow:hidden}
+.cms-img .th.contain{background-size:contain;background-color:#fff}
+.cms-img .acts{display:flex;flex-wrap:wrap;gap:6px}
+.cms-sbtn{font:600 13px var(--text);padding:8px 12px;border-radius:9px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink)}
+.cms-sbtn:hover{border-color:var(--ink)}
+.cms-sbtn.danger{color:#B42318}
+.cms-sbtn.add{border-style:dashed;width:100%;padding:11px}
+.cms-list{display:grid;gap:10px}
+.cms-item{border:1px solid var(--line);border-radius:12px;background:#FCFCFA}
+.cms-item>.hd{display:flex;align-items:center;gap:6px;padding:8px 8px 8px 12px;border-bottom:1px solid transparent;cursor:pointer}
+.cms-item.open>.hd{border-bottom-color:var(--line)}
+.cms-item>.hd b{flex:1;font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cms-item>.hd .n{font-size:12px;color:var(--muted);min-width:20px}
+.cms-item>.bd{display:none;padding:12px;gap:12px}
+.cms-item.open>.bd{display:grid}
+.cms-mini{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center;color:var(--ink);flex:none}
+.cms-mini:hover{border-color:var(--ink)}
+.cms-mini:disabled{opacity:.35;cursor:default}
+.cms-mini svg{width:14px;height:14px}
+.cms-str{display:flex;gap:6px;align-items:center}
+.cms-str input{flex:1}
+.cms-foot{border-top:1px solid var(--line);padding:12px 16px;display:grid;gap:8px;background:#fff}
+.cms-foot .row{display:flex;gap:8px;align-items:center}
+.cms-status{font-size:13px;color:var(--muted);flex:1}
+.cms-status.dirty{color:var(--orange-dk);font-weight:600}
+.cms-pub{height:46px;padding:0 20px;border-radius:999px;border:0;background:var(--orange);color:#fff;font:700 15px var(--text);cursor:pointer}
+.cms-pub:disabled{background:#E9B9A6;cursor:default}
+.cms-ghost{height:46px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:#fff;font:600 14px var(--text);cursor:pointer;color:var(--ink)}
+.cms-confirm{border-radius:12px;background:var(--paper);padding:12px 14px;display:grid;gap:10px;font-size:14px}
+.cms-meter{height:6px;border-radius:3px;background:var(--paper-2);overflow:hidden}
+.cms-meter i{display:block;height:100%;background:var(--lagune)}
+.cms-help{font-size:13px;color:var(--muted);padding:2px 2px 14px}
+.cms [hidden]{display:none!important}
+.cms-flash{outline:3px solid var(--orange)!important;outline-offset:6px;border-radius:12px;transition:outline-color 1s}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}
+</style>
+<script type="application/ld+json" id="viza-ld">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","name":"VIZA","slogan":"On vous fait voir.","description":"VIZA, agence de communication 360° et imprimerie à Abidjan : impression de tous supports, branding, affichage publicitaire, couverture médias, campagnes et réseaux sociaux. Devis sous 24 h.","telephone":["+225 07 49 01 72 74","+225 05 55 71 65 84"],"email":"dolouroupierre@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Abidjan","addressCountry":"CI"},"areaServed":"Abidjan et toute la Côte d'Ivoire","hasOfferCatalog":{"@type":"OfferCatalog","name":"Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Impression tous supports","description":"Petits et grands formats, édition, goodies et signalétique. Vos fichiers sont vérifiés, un BAT vous est envoyé avant chaque tirage et la livraison est suivie."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Branding & identité visuelle","description":"Une identité cohérente et reconnaissable, pensée pour être déclinée sur tous vos supports, du logo à l'habillage de vos véhicules."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Affichage publicitaire","description":"Des campagnes sur panneaux grand format, achetées auprès de régies agréées. Emplacements autorisés, photos de pose et aucun risque de démontage."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Couverture médias & RP","description":"Faire parler de vous dans la presse et garder une trace forte de vos événements, en photo comme en vidéo."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Gestion de campagnes 360°","description":"De la stratégie au bilan chiffré : planning, coordination des prestataires et suivi du budget. Vous validez, nous pilotons."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Réseaux sociaux & contenus","description":"Des contenus qui donnent envie, une communauté animée chaque semaine et des publicités ciblées sur Facebook, Instagram, TikTok et Google."}}]}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quels supports pouvez-vous imprimer ?","acceptedAnswer":{"@type":"Answer","text":"Tous les supports de communication : cartes de visite, flyers, affiches, plaquettes, brochures, magazines, bâches, kakémonos, roll-up, adhésifs, goodies et textile. Si un format manque à notre catalogue, nous le trouvons."}},{"@type":"Question","name":"Combien de temps pour obtenir un devis ?","acceptedAnswer":{"@type":"Answer","text":"Moins de 24 heures après réception de votre besoin. Le devis précise le prix ferme, les quantités et le délai de livraison."}},{"@type":"Question","name":"Peut-on commander en petite quantité ?","acceptedAnswer":{"@type":"Answer","text":"Oui, de 50 cartes de visite à plusieurs milliers de flyers. Le prix unitaire baisse avec la quantité ; nous vous conseillons le meilleur palier."}},{"@type":"Question","name":"Votre affichage est-il conforme à la réglementation ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Nos campagnes d'affichage passent par des régies agréées, sur des emplacements autorisés. Aucun risque de démontage."}},{"@type":"Question","name":"Faut-il fournir ses propres fichiers ?","acceptedAnswer":{"@type":"Answer","text":"Non. Nos graphistes créent vos visuels. Si vous avez déjà vos fichiers, nous les vérifions (format, résolution, fonds perdus) avant impression."}},{"@type":"Question","name":"Livrez-vous partout à Abidjan ?","acceptedAnswer":{"@type":"Answer","text":"Oui, dans tout le district d'Abidjan. Pour l'intérieur du pays, l'expédition ou la pose se fait sur devis."}},{"@type":"Question","name":"Comment se passe le paiement ?","acceptedAnswer":{"@type":"Answer","text":"Un acompte est demandé à la validation du devis, le solde à la livraison. Les modalités exactes figurent sur chaque devis."}}]}]}</script>
+</head>
+<body>
+<script type="application/json" id="viza-data">{"deploy":{"owner":"Dolourou-Pierre","repo":"viza","branch":"main","url":"https://dolourou-pierre.github.io/viza/"},"site":{"whatsapp":"2250749017274","phone1":"+225 07 49 01 72 74","phone2":"+225 05 55 71 65 84","email":"dolouroupierre@gmail.com","city":"Abidjan, Côte d'Ivoire","zone":"Abidjan et toute la Côte d'Ivoire","menu":{"accueil":"Accueil","agence":"L'agence","services":"Services","realisations":"Réalisations","faq":"FAQ","contact":"Contact"},"headerCta":"Demander un devis","waDefault":"Bonjour VIZA, j'aimerais échanger sur un projet.","footerPitch":"Agence de communication 360° et imprimerie à Abidjan. On vous fait voir.","footerNav":"Navigation","footerServices":"Services","footerContact":"Contact","legal":"© 2026 VIZA · Tous droits réservés","made":"Fait à Abidjan"},"seo":{"siteName":"VIZA","slogan":"On vous fait voir.","accueil":{"title":"VIZA · Agence de communication 360° et imprimerie à Abidjan","description":"VIZA, agence de communication 360° et imprimerie à Abidjan : impression de tous supports, branding, affichage publicitaire, couverture médias, campagnes et réseaux sociaux. Devis sous 24 h."},"agence":{"title":"L'agence · VIZA Abidjan","description":"Découvrez VIZA, agence de communication 360° et imprimerie à Abidjan : notre conviction, notre fondateur et nos valeurs."},"services":{"title":"Services · VIZA Abidjan","description":"Impression de tous supports, branding, affichage publicitaire, couverture médias, gestion de campagnes et réseaux sociaux à Abidjan."},"realisations":{"title":"Réalisations · VIZA Abidjan","description":"Les projets de communication et d'impression réalisés par VIZA pour ses clients à Abidjan."},"faq":{"title":"FAQ · VIZA Abidjan","description":"Délais, quantités, fichiers, livraison : les réponses à vos questions sur l'impression et la communication avec VIZA."},"contact":{"title":"Contact et devis · VIZA Abidjan","description":"Demandez votre devis gratuit sous 24 heures : impression, branding, affichage, médias et réseaux sociaux à Abidjan."}},"home":{"heroImage":"images/accueil.jpg","eyebrow":"Agence de communication 360° · Abidjan","lead":"On vous fait","rotor":["voir.","connaître.","remarquer.","grandir."],"cta1":"Démarrer un projet","cta2":"Nos services","scroll":"Défiler","ticker":["Cartes de visite","Bâches","Brochures","Kakémonos","Goodies","Branding","Affichage","Couverture médias","Réseaux sociaux","Campagnes"],"servicesEyebrow":"Nos services","servicesTitle":"Toute votre communication, sous un même toit.","servicesText":"Six expertises pour un besoin ponctuel comme pour une campagne complète, toujours chiffrées sur mesure.","discover":"Découvrir","trustEyebrow":"Ils nous font confiance","trustTitle":"Entreprises, institutions et ONG.","trustText":"Ils nous ont confié leur visibilité, de l'impression à la campagne complète.","partners":[{"name":"Partenaire 1","logo":""},{"name":"Partenaire 2","logo":""},{"name":"Partenaire 3","logo":""},{"name":"Partenaire 4","logo":""},{"name":"Partenaire 5","logo":""},{"name":"Partenaire 6","logo":""}],"methodEyebrow":"Notre méthode","methodTitle":"Simple, du premier message à la livraison.","methodText":"Vous décrivez votre besoin, nous nous occupons du reste, en vous tenant informé à chaque étape.","steps":[{"title":"Votre besoin","text":"Sur WhatsApp, par téléphone ou via le formulaire.","when":"Jour J"},{"title":"Devis et maquette","text":"Prix ferme, délai écrit et BAT à valider.","when":"Sous 24 h"},{"title":"Production","text":"Par le spécialiste du métier, suivie par votre chef de projet.","when":"Selon le support"},{"title":"Livraison et preuve","text":"Photo de chaque livraison ou pose, envoyée sur WhatsApp.","when":"Le jour même"}],"promises":[{"big":"1","title":"Un seul interlocuteur","text":"Une personne suit votre projet du brief à la livraison."},{"big":"24 h","title":"Pour votre devis","text":"Prix ferme, quantités et délai écrit."},{"big":"100 %","title":"Conforme et prouvé","text":"BAT validé avant impression, photo de chaque pose."}],"ctaTitle":"Un projet en tête ?","ctaText":"Décrivez-le en quelques lignes, réponse sous 24 heures.","ctaButton":"Demander un devis","ctaWa":"WhatsApp"},"agence":{"image":"images/agence.jpg","title":"Une agence née pour rendre les marques visibles.","intro":"VIZA réunit sous un même toit l'impression, la création et la diffusion. Une seule équipe, un seul interlocuteur, et une exigence : que vous soyez vu.","convEyebrow":"Notre conviction","manifesto":"Une marque qu'on ne voit pas n'existe pas. Nous rendons la vôtre *visible* partout où vos clients regardent : dans la rue, entre leurs mains et sur leurs écrans.","founderEyebrow":"Le fondateur","founderImage":"","quote":"« J'ai passé des années de l'autre côté de la table, à courir après les prestataires. VIZA, c'est l'agence que j'aurais voulu avoir. »","founderName":"Silué Dolourou","founderRole":"Fondateur · Communication & relations publiques","points":["Plus de 5 ans en communication pour des groupes, des laboratoires et des ONG.","Pilotage de stratégies complètes : éditorial, médias, événementiel, budget.","Un réseau de talents : graphistes, imprimeurs, vidéastes, community managers."],"valuesEyebrow":"Nos valeurs","valuesTitle":"Ce qui guide chaque projet.","valuesText":"Trois principes simples, écrits sur chacun de nos devis.","values":[{"icon":"person","title":"Proximité","text":"Un interlocuteur unique, joignable, qui connaît votre projet par cœur."},{"icon":"balance","title":"Transparence","text":"Prix ferme, délai écrit, aucune surprise sur la facture."},{"icon":"camera","title":"Preuve","text":"Chaque livraison et chaque pose sont photographiées et partagées."}],"ctaTitle":"Travaillons ensemble.","ctaText":"Parlez-nous de votre marque et de vos objectifs.","ctaButton":"Nous contacter"},"services":{"image":"images/services.jpg","title":"Six expertises, un seul interlocuteur.","intro":"De l'impression d'une carte de visite à la gestion d'une campagne nationale, nous chiffrons chaque projet sur mesure.","askLabel":"Demander un devis","items":[{"id":"impression","name":"Impression tous supports","short":"Cartes de visite, brochures, bâches, kakémonos, goodies : tout ce qui s'imprime.","text":"Petits et grands formats, édition, goodies et signalétique. Vos fichiers sont vérifiés, un BAT vous est envoyé avant chaque tirage et la livraison est suivie.","tags":["Cartes de visite","Flyers","Plaquettes","Brochures","Magazines","Bâches","Kakémonos","Roll-up","Goodies","Textile"],"image":"images/service-impression.jpg","illus":"il-print","home":"large"},{"id":"branding","name":"Branding & identité visuelle","short":"Logo, charte graphique et déclinaisons pour une marque reconnaissable.","text":"Une identité cohérente et reconnaissable, pensée pour être déclinée sur tous vos supports, du logo à l'habillage de vos véhicules.","tags":["Logo","Charte graphique","Papeterie","Packaging","Habillage véhicule"],"image":"images/service-branding.jpg","illus":"il-brand","home":"large"},{"id":"affichage","name":"Affichage publicitaire","short":"Des panneaux grand format, via des régies agréées.","text":"Des campagnes sur panneaux grand format, achetées auprès de régies agréées. Emplacements autorisés, photos de pose et aucun risque de démontage.","tags":["Panneaux 4×3","12 m²","Campagnes multi-sites","Création des visuels","Rapport de pose"],"image":"images/service-affichage.jpg","illus":"il-bill","home":"small"},{"id":"medias","name":"Couverture médias & RP","short":"Presse, photo et vidéo de vos événements.","text":"Faire parler de vous dans la presse et garder une trace forte de vos événements, en photo comme en vidéo.","tags":["Conférences de presse","Relations journalistes","Communiqués","Photo","Vidéo & montage"],"image":"images/service-medias.jpg","illus":"il-media","home":"small"},{"id":"campagnes","name":"Gestion de campagnes 360°","short":"Stratégie, planning, coordination et bilan chiffré.","text":"De la stratégie au bilan chiffré : planning, coordination des prestataires et suivi du budget. Vous validez, nous pilotons.","tags":["Stratégie","Rétroplanning","Coordination","Suivi budgétaire","Reporting"],"image":"images/service-campagnes.jpg","illus":"il-camp","home":"hidden"},{"id":"social","name":"Réseaux sociaux & contenus","short":"Contenus, communauté et publicité ciblée.","text":"Des contenus qui donnent envie, une communauté animée chaque semaine et des publicités ciblées sur Facebook, Instagram, TikTok et Google.","tags":["Community management","Visuels & vidéos","Meta Ads","Google Ads","Influence"],"image":"images/service-reseaux.jpg","illus":"il-social","home":"small"}],"catalogTitle":"Catalogue impression","delayLabel":"Délai indicatif","catalog":[{"tab":"Petits formats","items":[{"name":"Cartes de visite","desc":"85 × 55 mm · 350 à 400 g · pelliculage mat ou brillant","delay":"48 h"},{"name":"Flyers","desc":"A6, A5, DL · recto ou recto-verso","delay":"48 à 72 h"},{"name":"Affiches","desc":"A3 à A1 · intérieur ou extérieur","delay":"48 à 72 h"},{"name":"Plaquettes","desc":"A4 plié en 2 ou 3 volets","delay":"3 à 5 jours"},{"name":"Papeterie","desc":"En-têtes, enveloppes, chemises à rabats","delay":"3 à 5 jours"},{"name":"Invitations & menus","desc":"Papiers de création, dorure possible","delay":"3 à 5 jours"}]},{"tab":"Grands formats","items":[{"name":"Bâches","desc":"Sur mesure · PVC, œillets, micro-perforée","delay":"48 à 72 h"},{"name":"Kakémonos","desc":"80 × 200 ou 85 × 200 cm","delay":"48 à 72 h"},{"name":"Roll-up","desc":"85 × 200 cm · enrouleur et sac","delay":"48 à 72 h"},{"name":"Banderoles","desc":"Sur mesure · PVC ou tissu","delay":"48 à 72 h"},{"name":"Photocall","desc":"200 × 230 cm ou sur mesure","delay":"3 à 5 jours"}]},{"tab":"Édition","items":[{"name":"Brochures","desc":"A5, A4 · 8 à 48 pages","delay":"5 à 7 jours"},{"name":"Magazines","desc":"A4 · couché brillant ou mat","delay":"7 à 10 jours"},{"name":"Catalogues","desc":"Couverture pelliculée, finitions premium","delay":"7 à 10 jours"},{"name":"Rapports annuels","desc":"A4 · reliure au choix","delay":"7 à 10 jours"}]},{"tab":"Goodies & textile","items":[{"name":"T-shirts & polos","desc":"Sérigraphie, flocage ou broderie","delay":"5 à 7 jours"},{"name":"Stylos","desc":"Tampographie ou gravure laser","delay":"5 à 10 jours"},{"name":"Mugs & gourdes","desc":"Sublimation ou gravure","delay":"5 à 7 jours"},{"name":"Tote bags","desc":"Coton, jute ou non-tissé","delay":"5 à 10 jours"},{"name":"Carnets & casquettes","desc":"Marquage à votre logo","delay":"7 à 10 jours"}]},{"tab":"Signalétique","items":[{"name":"Adhésifs vitrine","desc":"Vinyle opaque, dépoli ou micro-perforé, pose incluse","delay":"3 à 5 jours"},{"name":"Enseignes","desc":"Dibond, plexiglas, option lumineuse","delay":"Sur devis"},{"name":"Habillage de véhicules","desc":"Covering partiel ou total","delay":"3 à 7 jours"},{"name":"Panneaux de chantier","desc":"Dibond ou akylux","delay":"3 à 5 jours"}]}]},"realisations":{"image":"images/realisations.jpg","title":"Ce que nous fabriquons pour nos clients.","intro":"Un aperçu des projets que nous réalisons, du support imprimé à la campagne complète.","allLabel":"Tous","badge":"Exemple","filters":[{"key":"impression","label":"Impression"},{"key":"branding","label":"Branding"},{"key":"affichage","label":"Affichage"},{"key":"medias","label":"Médias"},{"key":"digital","label":"Digital"}],"works":[{"title":"Kit de lancement produit","cat":"impression","text":"Brochures, flyers et cartes de visite pour le lancement d'une gamme.","image":"images/real-kit-lancement.jpg","illus":"il-print","example":"oui"},{"title":"Campagne de rentrée","cat":"affichage","text":"Panneaux 4×3 sur trois communes pour un groupe scolaire.","image":"images/real-rentree.jpg","illus":"il-bill","example":"oui"},{"title":"Identité d'un restaurant","cat":"branding","text":"Logo, menus, enseigne et habillage de la façade.","image":"images/real-restaurant.jpg","illus":"il-brand","example":"oui"},{"title":"Conférence de presse","cat":"medias","text":"Organisation, relations journalistes et vidéo de l'événement.","image":"images/real-conference.jpg","illus":"il-media","example":"oui"},{"title":"Animation Instagram et TikTok","cat":"digital","text":"Calendrier éditorial, contenus et publicité pour une boutique.","image":"images/real-instagram.jpg","illus":"il-social","example":"oui"},{"title":"Événement clé en main","cat":"impression","text":"Photocall, roll-up, badges et goodies pour un salon.","image":"images/real-salon.jpg","illus":"il-camp","example":"oui"}],"note":"Les projets ci-dessus sont des exemples de prestations. Ils seront remplacés par nos réalisations clients, photos à l'appui."},"faq":{"image":"images/faq.jpg","title":"Vos questions, nos réponses.","intro":"Une autre question ? Écrivez-nous sur WhatsApp, nous répondons dans la journée.","items":[{"q":"Quels supports pouvez-vous imprimer ?","a":"Tous les supports de communication : cartes de visite, flyers, affiches, plaquettes, brochures, magazines, bâches, kakémonos, roll-up, adhésifs, goodies et textile. Si un format manque à notre catalogue, nous le trouvons."},{"q":"Combien de temps pour obtenir un devis ?","a":"Moins de 24 heures après réception de votre besoin. Le devis précise le prix ferme, les quantités et le délai de livraison."},{"q":"Peut-on commander en petite quantité ?","a":"Oui, de 50 cartes de visite à plusieurs milliers de flyers. Le prix unitaire baisse avec la quantité ; nous vous conseillons le meilleur palier."},{"q":"Votre affichage est-il conforme à la réglementation ?","a":"Oui. Nos campagnes d'affichage passent par des régies agréées, sur des emplacements autorisés. Aucun risque de démontage."},{"q":"Faut-il fournir ses propres fichiers ?","a":"Non. Nos graphistes créent vos visuels. Si vous avez déjà vos fichiers, nous les vérifions (format, résolution, fonds perdus) avant impression."},{"q":"Livrez-vous partout à Abidjan ?","a":"Oui, dans tout le district d'Abidjan. Pour l'intérieur du pays, l'expédition ou la pose se fait sur devis."},{"q":"Comment se passe le paiement ?","a":"Un acompte est demandé à la validation du devis, le solde à la livraison. Les modalités exactes figurent sur chaque devis."}]},"contact":{"image":"images/contact.jpg","title":"Parlons de votre projet.","intro":"Devis gratuit sous 24 heures. Votre demande est rédigée automatiquement et envoyée sur WhatsApp en un geste.","phoneLabel":"Téléphone & WhatsApp","phone2Label":"Ligne 2","emailLabel":"E-mail","zoneLabel":"Zone d'intervention","formTitle":"Votre demande de devis","legend":"De quoi avez-vous besoin ?","descLabel":"Décrivez votre projet","descPh":"Ex. : 500 flyers A5 et 2 roll-up pour un lancement le 5 décembre.","delaiLabel":"Pour quand ?","delais":["Urgent (moins de 72 h)","Cette semaine","Ce mois-ci","Pas de date précise"],"budgetLabel":"Budget estimé","budgetNone":"Je ne sais pas encore","budgets":["Moins de 100 000 FCFA","100 000 à 500 000 FCFA","500 000 à 2 000 000 FCFA","Plus de 2 000 000 FCFA"],"nameLabel":"Votre nom","namePh":"Nom et prénom","telLabel":"Téléphone","telPh":"+225 …","choose":"Choisir","submit":"Préparer ma demande","privacy":"Aucune donnée n'est stockée sur ce site.","errNeed":"Cochez au moins un service ou décrivez votre projet.","errName":"Indiquez votre nom pour que nous puissions vous recontacter.","resultTitle":"Votre demande est prête","sendWa":"Envoyer sur WhatsApp","copy":"Copier","edit":"Modifier","waIntro":"Bonjour VIZA, je souhaite un devis."}}</script>
+<svg id="sprite" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+  <symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"></path></symbol>
+  <symbol id="ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#0E7A6E"></circle><path d="M7 12.4l3.2 3.2 6.8-7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+  <symbol id="il-print" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#151A22"></rect><circle cx="330" cy="60" r="90" fill="#0E7A6E" opacity=".35"></circle><g transform="rotate(-8 200 160)"><rect x="96" y="70" width="170" height="210" rx="6" fill="#0E7A6E"></rect><rect x="118" y="58" width="170" height="210" rx="6" fill="#F4F3EF"></rect><rect x="140" y="86" width="96" height="10" rx="5" fill="#151A22"></rect><rect x="140" y="106" width="126" height="6" rx="3" fill="#C9C6BE"></rect><rect x="140" y="120" width="110" height="6" rx="3" fill="#C9C6BE"></rect><rect x="140" y="146" width="126" height="78" rx="6" fill="#FF5B1F"></rect><rect x="140" y="236" width="70" height="6" rx="3" fill="#C9C6BE"></rect></g><g transform="rotate(10 300 220)"><rect x="250" y="178" width="120" height="74" rx="6" fill="#FBFBF8"></rect><rect x="264" y="194" width="48" height="8" rx="4" fill="#151A22"></rect><rect x="264" y="210" width="34" height="5" rx="2.5" fill="#A9AEB9"></rect><circle cx="346" cy="232" r="9" fill="#FF5B1F"></circle></g></symbol>
+  <symbol id="il-brand" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#F4F3EF"></rect><rect x="40" y="46" width="200" height="208" rx="18" fill="#151A22"></rect><g transform="translate(78,112) scale(.86)"><path fill="#FBFBF8" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"></path><path fill="#FF5B1F" d="M69 53C73 41 81 27 91 15 99 6 107 2 115 1.5L140 1C134 9 127 15 119 20 112 25 104 30 97 33 87 37 77 44 69 53Z"></path></g><rect x="262" y="46" width="98" height="60" rx="12" fill="#FF5B1F"></rect><rect x="262" y="120" width="98" height="60" rx="12" fill="#0E7A6E"></rect><rect x="262" y="194" width="98" height="60" rx="12" fill="#FBFBF8" stroke="#DDDAD2" stroke-width="2"></rect></symbol>
+  <symbol id="il-bill" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#0E7A6E"></rect><circle cx="320" cy="70" r="34" fill="#FF5B1F" opacity=".9"></circle><rect y="236" width="400" height="64" fill="#0B5A51"></rect><rect x="190" y="170" width="16" height="80" fill="#151A22"></rect><rect x="66" y="56" width="264" height="132" rx="6" fill="#151A22"></rect><rect x="78" y="68" width="240" height="108" rx="3" fill="#FF5B1F"></rect><g transform="translate(96,90) scale(.5)"><path fill="#FBFBF8" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"></path></g><rect x="186" y="98" width="110" height="12" rx="6" fill="#FBFBF8"></rect><rect x="186" y="120" width="80" height="8" rx="4" fill="#FBFBF8" opacity=".7"></rect></symbol>
+  <symbol id="il-media" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#151A22"></rect><rect x="70" y="96" width="190" height="130" rx="18" fill="#2D3442"></rect><rect x="100" y="80" width="60" height="22" rx="6" fill="#2D3442"></rect><circle cx="165" cy="161" r="46" fill="#151A22"></circle><circle cx="165" cy="161" r="32" fill="#0E7A6E"></circle><circle cx="152" cy="148" r="9" fill="#FBFBF8" opacity=".6"></circle><circle cx="232" cy="118" r="7" fill="#FF5B1F"></circle><rect x="292" y="80" width="40" height="76" rx="20" fill="#F4F3EF"></rect><path d="M280 140a32 32 0 0 0 64 0" fill="none" stroke="#F4F3EF" stroke-width="6"></path><rect x="309" y="172" width="6" height="40" fill="#F4F3EF"></rect><rect x="290" y="210" width="44" height="6" rx="3" fill="#F4F3EF"></rect></symbol>
+  <symbol id="il-camp" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#F4F3EF"></rect><rect x="40" y="40" width="200" height="220" rx="18" fill="#FBFBF8" stroke="#DDDAD2" stroke-width="2"></rect><rect x="60" y="62" width="90" height="10" rx="5" fill="#151A22"></rect><g fill="#EAE8E1"><rect x="60" y="90" width="160" height="22" rx="6"></rect><rect x="60" y="120" width="160" height="22" rx="6"></rect><rect x="60" y="150" width="160" height="22" rx="6"></rect><rect x="60" y="180" width="160" height="22" rx="6"></rect></g><rect x="60" y="90" width="120" height="22" rx="6" fill="#0E7A6E"></rect><rect x="90" y="120" width="96" height="22" rx="6" fill="#FF5B1F"></rect><rect x="120" y="150" width="90" height="22" rx="6" fill="#151A22"></rect><rect x="150" y="180" width="70" height="22" rx="6" fill="#0E7A6E"></rect><circle cx="300" cy="150" r="70" fill="#151A22"></circle><circle cx="300" cy="150" r="46" fill="#F4F3EF"></circle><circle cx="300" cy="150" r="24" fill="#FF5B1F"></circle><path d="M300 150 356 94" stroke="#151A22" stroke-width="6" stroke-linecap="round"></path></symbol>
+  <symbol id="il-social" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#FF5B1F"></rect><rect x="128" y="30" width="144" height="250" rx="24" fill="#151A22"></rect><rect x="138" y="52" width="124" height="214" rx="12" fill="#F4F3EF"></rect><circle cx="154" cy="70" r="8" fill="#0E7A6E"></circle><rect x="168" y="66" width="50" height="7" rx="3.5" fill="#151A22"></rect><rect x="146" y="86" width="108" height="100" rx="8" fill="#0E7A6E"></rect><circle cx="200" cy="136" r="22" fill="#FF5B1F"></circle><rect x="146" y="196" width="80" height="7" rx="3.5" fill="#5D6270"></rect><rect x="146" y="210" width="60" height="7" rx="3.5" fill="#A9AEB9"></rect><g transform="translate(286,70)"><rect width="78" height="44" rx="22" fill="#FBFBF8"></rect><path d="M27 30s-11-7-11-14a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 7-11 14-11 14z" fill="#FF5B1F"></path><rect x="44" y="18" width="22" height="8" rx="4" fill="#151A22"></rect></g><g transform="translate(36,170)"><rect width="78" height="44" rx="22" fill="#FBFBF8"></rect><rect x="16" y="14" width="46" height="7" rx="3.5" fill="#151A22"></rect><rect x="16" y="25" width="30" height="6" rx="3" fill="#A9AEB9"></rect></g></symbol>
+  <symbol id="il-founder" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><rect width="400" height="500" fill="#151A22"></rect><circle cx="200" cy="190" r="150" fill="#0E7A6E" opacity=".4"></circle><circle cx="200" cy="170" r="62" fill="#2D3442"></circle><path d="M80 430c10-90 60-150 120-150s110 60 120 150z" fill="#2D3442"></path></symbol>
+</defs>
+</svg>
+<header class="top" id="top"><div class="wrap"><a class="brand" href="#accueil" aria-label="VIZA"><svg viewBox="-4 -44 308 110" width="94" height="34" aria-hidden="true"><g transform="translate(0,-40) scale(.98)"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/><path fill="#FF5B1F" d="M69 53C73 41 81 27 91 15 99 6 107 2 115 1.5L140 1C134 9 127 15 119 20 112 25 104 30 97 33 87 37 77 44 69 53Z"/></g><g transform="translate(146,0)" fill="currentColor"><g stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="1.5" y="1.5" width="15" height="59" rx="3"/><path d="M31 1.5h50v11L51 49.5h30v11H29v-11L59 12.5H31z"/><path d="M93 60.5 115.5 1.5h16l22.5 59h-16L123.5 21 109 60.5z"/></g><rect x="118" y="37" width="16" height="11" rx="2" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></g></svg></a><nav aria-label="Navigation principale"><ul class="menu"><li><a href="#accueil" data-nav="accueil">Accueil</a></li><li><a href="#agence" data-nav="agence">L&#39;agence</a></li><li><a href="#services" data-nav="services">Services</a></li><li><a href="#realisations" data-nav="realisations">Réalisations</a></li><li><a href="#faq" data-nav="faq">FAQ</a></li><li><a href="#contact" data-nav="contact">Contact</a></li></ul></nav><a class="btn btn-or" href="#contact">Demander un devis</a><button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><i></i><i></i></button></div></header>
+<div class="drawer" id="drawer" aria-hidden="true"><div><ul><li><a href="#accueil" data-nav="accueil">Accueil</a></li><li><a href="#agence" data-nav="agence">L&#39;agence</a></li><li><a href="#services" data-nav="services">Services</a></li><li><a href="#realisations" data-nav="realisations">Réalisations</a></li><li><a href="#faq" data-nav="faq">FAQ</a></li><li><a href="#contact" data-nav="contact">Contact</a></li></ul><a class="btn btn-or" href="#contact">Demander un devis</a></div><div class="d-foot"><span>+225 07 49 01 72 74</span><span>Abidjan, Côte d&#39;Ivoire</span></div></div>
+<main id="pages"><div class="page on" data-route="accueil"><section class="hero photo-bg" style="--bg:url('images/accueil.jpg')" data-block="hero"><svg class="ghost" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/></svg><div class="wrap"><div class="txt"><span class="eyebrow">Agence de communication 360° · Abidjan</span><h1 aria-label="On vous fait voir."><span class="l1" aria-hidden="true">On vous fait</span><span class="rotor" aria-hidden="true"><span class="cur">voir.</span><span>connaître.</span><span>remarquer.</span><span>grandir.</span></span></h1><div class="ctas"><a class="btn btn-or" href="#contact">Démarrer un projet <svg class="arr"><use href="#arr"/></svg></a><a class="btn btn-line" href="#services">Nos services</a></div></div><span class="scroll" aria-hidden="true">Défiler</span></div></section><div class="ticker" aria-hidden="true" data-block="ticker"><div class="run"><span>Cartes de visite</span><span>Bâches</span><span>Brochures</span><span>Kakémonos</span><span>Goodies</span><span>Branding</span><span>Affichage</span><span>Couverture médias</span><span>Réseaux sociaux</span><span>Campagnes</span><span>Cartes de visite</span><span>Bâches</span><span>Brochures</span><span>Kakémonos</span><span>Goodies</span><span>Branding</span><span>Affichage</span><span>Couverture médias</span><span>Réseaux sociaux</span><span>Campagnes</span></div></div><section class="s" data-block="home-services"><div class="wrap"><div class="s-head"><div><span class="eyebrow">Nos services</span><h2>Toute votre communication, sous un même toit.</h2></div><p>Six expertises pour un besoin ponctuel comme pour une campagne complète, toujours chiffrées sur mesure.</p></div><div class="bento"><a class="svc-card wide rv" href="#services" data-goto="srv-0"><div class="vis"><img src="images/service-impression.jpg" alt="" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#il-print&quot;/&gt;&lt;/svg&gt;"></div><div class="body"><h3>Impression tous supports</h3><p>Cartes de visite, brochures, bâches, kakémonos, goodies : tout ce qui s&#39;imprime.</p><span class="more">Découvrir <svg><use href="#arr"/></svg></span></div></a><a class="svc-card wide rv" href="#services" data-goto="srv-1"><div class="vis"><img src="images/service-branding.jpg" alt="" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#il-brand&quot;/&gt;&lt;/svg&gt;"></div><div class="body"><h3>Branding &amp; identité visuelle</h3><p>Logo, charte graphique et déclinaisons pour une marque reconnaissable.</p><span class="more">Découvrir <svg><use href="#arr"/></svg></span></div></a><a class="svc-card rv" href="#services" data-goto="srv-2"><div class="vis"><img src="images/service-affichage.jpg" alt="" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#il-bill&quot;/&gt;&lt;/svg&gt;"></div><div class="body"><h3>Affichage publicitaire</h3><p>Des panneaux grand format, via des régies agréées.</p><span class="more">Découvrir <svg><use href="#arr"/></svg></span></div></a><a class="svc-card rv" href="#services" data-goto="srv-3"><div class="vis"><img src="images/service-medias.jpg" alt="" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#il-media&quot;/&gt;&lt;/svg&gt;"></div><div class="body"><h3>Couverture médias &amp; RP</h3><p>Presse, photo et vidéo de vos événements.</p><span class="more">Découvrir <svg><use href="#arr"/></svg></span></div></a><a class="svc-card rv" href="#services" data-goto="srv-5"><div class="vis"><img src="images/service-reseaux.jpg" alt="" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#il-social&quot;/&gt;&lt;/svg&gt;"></div><div class="body"><h3>Réseaux sociaux &amp; contenus</h3><p>Contenus, communauté et publicité ciblée.</p><span class="more">Découvrir <svg><use href="#arr"/></svg></span></div></a></div></div></section><section class="s trust" style="padding-block:72px" data-block="partners"><div class="wrap"><div class="head"><div><span class="eyebrow">Ils nous font confiance</span><h2>Entreprises, institutions et ONG.</h2></div><p>Ils nous ont confié leur visibilité, de l&#39;impression à la campagne complète.</p></div></div><div class="strip"><div class="run"><div class="logo-slot"><span>Partenaire 1</span></div><div class="logo-slot"><span>Partenaire 2</span></div><div class="logo-slot"><span>Partenaire 3</span></div><div class="logo-slot"><span>Partenaire 4</span></div><div class="logo-slot"><span>Partenaire 5</span></div><div class="logo-slot"><span>Partenaire 6</span></div><div class="logo-slot" aria-hidden="true"><span>Partenaire 1</span></div><div class="logo-slot" aria-hidden="true"><span>Partenaire 2</span></div><div class="logo-slot" aria-hidden="true"><span>Partenaire 3</span></div><div class="logo-slot" aria-hidden="true"><span>Partenaire 4</span></div><div class="logo-slot" aria-hidden="true"><span>Partenaire 5</span></div><div class="logo-slot" aria-hidden="true"><span>Partenaire 6</span></div></div></div></section><section class="s dark" data-block="method"><div class="wrap"><div class="s-head"><div><span class="eyebrow">Notre méthode</span><h2>Simple, du premier message à la livraison.</h2></div><p>Vous décrivez votre besoin, nous nous occupons du reste, en vous tenant informé à chaque étape.</p></div><ol class="steps"><li class="step rv"><span class="n">1</span><h3>Votre besoin</h3><p>Sur WhatsApp, par téléphone ou via le formulaire.</p><span class="when">Jour J</span></li><li class="step rv"><span class="n">2</span><h3>Devis et maquette</h3><p>Prix ferme, délai écrit et BAT à valider.</p><span class="when">Sous 24 h</span></li><li class="step rv"><span class="n">3</span><h3>Production</h3><p>Par le spécialiste du métier, suivie par votre chef de projet.</p><span class="when">Selon le support</span></li><li class="step rv"><span class="n">4</span><h3>Livraison et preuve</h3><p>Photo de chaque livraison ou pose, envoyée sur WhatsApp.</p><span class="when">Le jour même</span></li></ol></div></section><section class="s" data-block="promises"><div class="wrap"><div class="promises"><div class="promise rv"><b>1</b><h3>Un seul interlocuteur</h3><p>Une personne suit votre projet du brief à la livraison.</p></div><div class="promise rv"><b>24 h</b><h3>Pour votre devis</h3><p>Prix ferme, quantités et délai écrit.</p></div><div class="promise rv"><b>100 %</b><h3>Conforme et prouvé</h3><p>BAT validé avant impression, photo de chaque pose.</p></div></div><div style="margin-top:80px"><div class="cta rv" data-block="cta"><div><h2>Un projet en tête ?</h2><p>Décrivez-le en quelques lignes, réponse sous 24 heures.</p></div><div class="btns"><a class="btn btn-or" href="#contact">Demander un devis <svg class="arr"><use href="#arr"/></svg></a><a class="btn btn-line" href="https://wa.me/2250749017274?text=Bonjour%20VIZA%2C%20j&#39;aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a></div><svg class="deco" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/></svg></div></div></div></section></div><div class="page" data-route="agence"><header class="phead photo-bg" style="--bg:url('images/agence.jpg')" data-block="agence-head"><svg class="ghost" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/></svg><div class="wrap"><div class="crumb"><a href="#accueil">Accueil</a><span>/</span><span>L&#39;agence</span></div><h1>Une agence née pour rendre les marques visibles.</h1><p class="intro">VIZA réunit sous un même toit l&#39;impression, la création et la diffusion. Une seule équipe, un seul interlocuteur, et une exigence : que vous soyez vu.</p></div></header><section class="s" data-block="manifesto"><div class="wrap"><span class="eyebrow">Notre conviction</span><p class="manifesto rv">Une marque qu&#39;on ne voit pas n&#39;existe pas. Nous rendons la vôtre <mark>visible</mark> partout où vos clients regardent : dans la rue, entre leurs mains et sur leurs écrans.</p></div></section><section class="s white" data-block="founder"><div class="wrap founder"><div class="portrait rv vis"><svg aria-hidden="true"><use href="#il-founder"/></svg></div><div class="rv"><span class="eyebrow">Le fondateur</span><blockquote>« J&#39;ai passé des années de l&#39;autre côté de la table, à courir après les prestataires. VIZA, c&#39;est l&#39;agence que j&#39;aurais voulu avoir. »</blockquote><p class="who">Silué Dolourou<span>Fondateur · Communication &amp; relations publiques</span></p><ul><li><svg><use href="#ok"/></svg>Plus de 5 ans en communication pour des groupes, des laboratoires et des ONG.</li><li><svg><use href="#ok"/></svg>Pilotage de stratégies complètes : éditorial, médias, événementiel, budget.</li><li><svg><use href="#ok"/></svg>Un réseau de talents : graphistes, imprimeurs, vidéastes, community managers.</li></ul></div></div></section><section class="s" data-block="values"><div class="wrap"><div class="s-head"><div><span class="eyebrow">Nos valeurs</span><h2>Ce qui guide chaque projet.</h2></div><p>Trois principes simples, écrits sur chacun de nos devis.</p></div><div class="values"><div class="value rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div><h3>Proximité</h3><p>Un interlocuteur unique, joignable, qui connaît votre projet par cœur.</p></div><div class="value rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h16M12 4v16"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Transparence</h3><p>Prix ferme, délai écrit, aucune surprise sur la facture.</p></div><div class="value rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></div><h3>Preuve</h3><p>Chaque livraison et chaque pose sont photographiées et partagées.</p></div></div><div style="margin-top:72px"><div class="cta rv" data-block="cta"><div><h2>Travaillons ensemble.</h2><p>Parlez-nous de votre marque et de vos objectifs.</p></div><div class="btns"><a class="btn btn-or" href="#contact">Nous contacter <svg class="arr"><use href="#arr"/></svg></a></div><svg class="deco" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/></svg></div></div></div></section></div><div class="page" data-route="services"><header class="phead photo-bg" style="--bg:url('images/services.jpg')" data-block="services-head"><svg class="ghost" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/></svg><div class="wrap"><div class="crumb"><a href="#accueil">Accueil</a><span>/</span><span>Services</span></div><h1>Six expertises, un seul interlocuteur.</h1><p class="intro">De l&#39;impression d&#39;une carte de visite à la gestion d&#39;une campagne nationale, nous chiffrons chaque projet sur mesure.</p><div class="svc-nav"><button type="button" data-goto="srv-0">Impression tous supports</button><button type="button" data-goto="srv-1">Branding &amp; identité visuelle</button><button type="button" data-goto="srv-2">Affichage publicitaire</button><button type="button" data-goto="srv-3">Couverture médias &amp; RP</button><button type="button" data-goto="srv-4">Gestion de campagnes 360°</button><button type="button" data-goto="srv-5">Réseaux sociaux &amp; contenus</button></div></div></header><section class="s" style="padding-top:24px"><div class="wrap"><article class="svc-row" id="srv-0" data-block="srv-0"><div class="vis rv"><img src="images/service-impression.jpg" alt="Impression tous supports" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Impression tous supports&quot;&gt;&lt;use href=&quot;#il-print&quot;/&gt;&lt;/svg&gt;"></div><div class="rv"><span class="num">01</span><h2>Impression tous supports</h2><p class="lead">Petits et grands formats, édition, goodies et signalétique. Vos fichiers sont vérifiés, un BAT vous est envoyé avant chaque tirage et la livraison est suivie.</p><ul><li>Cartes de visite</li><li>Flyers</li><li>Plaquettes</li><li>Brochures</li><li>Magazines</li><li>Bâches</li><li>Kakémonos</li><li>Roll-up</li><li>Goodies</li><li>Textile</li></ul><div class="act"><button class="btn btn-ink ask" type="button" data-svc="0">Demander un devis <svg class="arr"><use href="#arr"/></svg></button></div></div></article><div class="catalog rv" data-block="catalog"><h3>Catalogue impression</h3><div class="tabs" role="tablist"><button class="tab" role="tab" type="button" data-tab="0" aria-selected="true">Petits formats</button><button class="tab" role="tab" type="button" data-tab="1" aria-selected="false" tabindex="-1">Grands formats</button><button class="tab" role="tab" type="button" data-tab="2" aria-selected="false" tabindex="-1">Édition</button><button class="tab" role="tab" type="button" data-tab="3" aria-selected="false" tabindex="-1">Goodies &amp; textile</button><button class="tab" role="tab" type="button" data-tab="4" aria-selected="false" tabindex="-1">Signalétique</button></div><div class="cat" role="tabpanel"><div class="item" style="animation-delay:0s"><h4>Cartes de visite</h4><p>85 × 55 mm · 350 à 400 g · pelliculage mat ou brillant</p><span class="d">Délai indicatif : 48 h</span></div><div class="item" style="animation-delay:0.04s"><h4>Flyers</h4><p>A6, A5, DL · recto ou recto-verso</p><span class="d">Délai indicatif : 48 à 72 h</span></div><div class="item" style="animation-delay:0.08s"><h4>Affiches</h4><p>A3 à A1 · intérieur ou extérieur</p><span class="d">Délai indicatif : 48 à 72 h</span></div><div class="item" style="animation-delay:0.12s"><h4>Plaquettes</h4><p>A4 plié en 2 ou 3 volets</p><span class="d">Délai indicatif : 3 à 5 jours</span></div><div class="item" style="animation-delay:0.16s"><h4>Papeterie</h4><p>En-têtes, enveloppes, chemises à rabats</p><span class="d">Délai indicatif : 3 à 5 jours</span></div><div class="item" style="animation-delay:0.2s"><h4>Invitations &amp; menus</h4><p>Papiers de création, dorure possible</p><span class="d">Délai indicatif : 3 à 5 jours</span></div></div></div><article class="svc-row" id="srv-1" data-block="srv-1"><div class="vis rv"><img src="images/service-branding.jpg" alt="Branding &amp; identité visuelle" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Branding &amp;amp; identité visuelle&quot;&gt;&lt;use href=&quot;#il-brand&quot;/&gt;&lt;/svg&gt;"></div><div class="rv"><span class="num">02</span><h2>Branding &amp; identité visuelle</h2><p class="lead">Une identité cohérente et reconnaissable, pensée pour être déclinée sur tous vos supports, du logo à l&#39;habillage de vos véhicules.</p><ul><li>Logo</li><li>Charte graphique</li><li>Papeterie</li><li>Packaging</li><li>Habillage véhicule</li></ul><div class="act"><button class="btn btn-ink ask" type="button" data-svc="1">Demander un devis <svg class="arr"><use href="#arr"/></svg></button></div></div></article><article class="svc-row" id="srv-2" data-block="srv-2"><div class="vis rv"><img src="images/service-affichage.jpg" alt="Affichage publicitaire" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Affichage publicitaire&quot;&gt;&lt;use href=&quot;#il-bill&quot;/&gt;&lt;/svg&gt;"></div><div class="rv"><span class="num">03</span><h2>Affichage publicitaire</h2><p class="lead">Des campagnes sur panneaux grand format, achetées auprès de régies agréées. Emplacements autorisés, photos de pose et aucun risque de démontage.</p><ul><li>Panneaux 4×3</li><li>12 m²</li><li>Campagnes multi-sites</li><li>Création des visuels</li><li>Rapport de pose</li></ul><div class="act"><button class="btn btn-ink ask" type="button" data-svc="2">Demander un devis <svg class="arr"><use href="#arr"/></svg></button></div></div></article><article class="svc-row" id="srv-3" data-block="srv-3"><div class="vis rv"><img src="images/service-medias.jpg" alt="Couverture médias &amp; RP" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Couverture médias &amp;amp; RP&quot;&gt;&lt;use href=&quot;#il-media&quot;/&gt;&lt;/svg&gt;"></div><div class="rv"><span class="num">04</span><h2>Couverture médias &amp; RP</h2><p class="lead">Faire parler de vous dans la presse et garder une trace forte de vos événements, en photo comme en vidéo.</p><ul><li>Conférences de presse</li><li>Relations journalistes</li><li>Communiqués</li><li>Photo</li><li>Vidéo &amp; montage</li></ul><div class="act"><button class="btn btn-ink ask" type="button" data-svc="3">Demander un devis <svg class="arr"><use href="#arr"/></svg></button></div></div></article><article class="svc-row" id="srv-4" data-block="srv-4"><div class="vis rv"><img src="images/service-campagnes.jpg" alt="Gestion de campagnes 360°" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Gestion de campagnes 360°&quot;&gt;&lt;use href=&quot;#il-camp&quot;/&gt;&lt;/svg&gt;"></div><div class="rv"><span class="num">05</span><h2>Gestion de campagnes 360°</h2><p class="lead">De la stratégie au bilan chiffré : planning, coordination des prestataires et suivi du budget. Vous validez, nous pilotons.</p><ul><li>Stratégie</li><li>Rétroplanning</li><li>Coordination</li><li>Suivi budgétaire</li><li>Reporting</li></ul><div class="act"><button class="btn btn-ink ask" type="button" data-svc="4">Demander un devis <svg class="arr"><use href="#arr"/></svg></button></div></div></article><article class="svc-row" id="srv-5" data-block="srv-5"><div class="vis rv"><img src="images/service-reseaux.jpg" alt="Réseaux sociaux &amp; contenus" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Réseaux sociaux &amp;amp; contenus&quot;&gt;&lt;use href=&quot;#il-social&quot;/&gt;&lt;/svg&gt;"></div><div class="rv"><span class="num">06</span><h2>Réseaux sociaux &amp; contenus</h2><p class="lead">Des contenus qui donnent envie, une communauté animée chaque semaine et des publicités ciblées sur Facebook, Instagram, TikTok et Google.</p><ul><li>Community management</li><li>Visuels &amp; vidéos</li><li>Meta Ads</li><li>Google Ads</li><li>Influence</li></ul><div class="act"><button class="btn btn-ink ask" type="button" data-svc="5">Demander un devis <svg class="arr"><use href="#arr"/></svg></button></div></div></article></div></section></div><div class="page" data-route="realisations"><header class="phead photo-bg" style="--bg:url('images/realisations.jpg')" data-block="realisations-head"><svg class="ghost" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/></svg><div class="wrap"><div class="crumb"><a href="#accueil">Accueil</a><span>/</span><span>Réalisations</span></div><h1>Ce que nous fabriquons pour nos clients.</h1><p class="intro">Un aperçu des projets que nous réalisons, du support imprimé à la campagne complète.</p></div></header><section class="s" style="padding-top:48px" data-block="works"><div class="wrap"><div class="filters" role="group"><button type="button" data-f="all" aria-pressed="true">Tous</button><button type="button" data-f="impression" aria-pressed="false">Impression</button><button type="button" data-f="branding" aria-pressed="false">Branding</button><button type="button" data-f="affichage" aria-pressed="false">Affichage</button><button type="button" data-f="medias" aria-pressed="false">Médias</button><button type="button" data-f="digital" aria-pressed="false">Digital</button></div><div class="works"><article class="work rv" data-c="impression"><div class="vis"><img src="images/real-kit-lancement.jpg" alt="Kit de lancement produit" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Kit de lancement produit&quot;&gt;&lt;use href=&quot;#il-print&quot;/&gt;&lt;/svg&gt;"><span class="badge">Exemple</span></div><div class="body"><span class="cat-l">Impression</span><h3>Kit de lancement produit</h3><p>Brochures, flyers et cartes de visite pour le lancement d&#39;une gamme.</p></div></article><article class="work rv" data-c="affichage"><div class="vis"><img src="images/real-rentree.jpg" alt="Campagne de rentrée" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Campagne de rentrée&quot;&gt;&lt;use href=&quot;#il-bill&quot;/&gt;&lt;/svg&gt;"><span class="badge">Exemple</span></div><div class="body"><span class="cat-l">Affichage</span><h3>Campagne de rentrée</h3><p>Panneaux 4×3 sur trois communes pour un groupe scolaire.</p></div></article><article class="work rv" data-c="branding"><div class="vis"><img src="images/real-restaurant.jpg" alt="Identité d&#39;un restaurant" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Identité d&amp;#39;un restaurant&quot;&gt;&lt;use href=&quot;#il-brand&quot;/&gt;&lt;/svg&gt;"><span class="badge">Exemple</span></div><div class="body"><span class="cat-l">Branding</span><h3>Identité d&#39;un restaurant</h3><p>Logo, menus, enseigne et habillage de la façade.</p></div></article><article class="work rv" data-c="medias"><div class="vis"><img src="images/real-conference.jpg" alt="Conférence de presse" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Conférence de presse&quot;&gt;&lt;use href=&quot;#il-media&quot;/&gt;&lt;/svg&gt;"><span class="badge">Exemple</span></div><div class="body"><span class="cat-l">Médias</span><h3>Conférence de presse</h3><p>Organisation, relations journalistes et vidéo de l&#39;événement.</p></div></article><article class="work rv" data-c="digital"><div class="vis"><img src="images/real-instagram.jpg" alt="Animation Instagram et TikTok" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Animation Instagram et TikTok&quot;&gt;&lt;use href=&quot;#il-social&quot;/&gt;&lt;/svg&gt;"><span class="badge">Exemple</span></div><div class="body"><span class="cat-l">Digital</span><h3>Animation Instagram et TikTok</h3><p>Calendrier éditorial, contenus et publicité pour une boutique.</p></div></article><article class="work rv" data-c="impression"><div class="vis"><img src="images/real-salon.jpg" alt="Événement clé en main" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="&lt;svg role=&quot;img&quot; aria-label=&quot;Événement clé en main&quot;&gt;&lt;use href=&quot;#il-camp&quot;/&gt;&lt;/svg&gt;"><span class="badge">Exemple</span></div><div class="body"><span class="cat-l">Impression</span><h3>Événement clé en main</h3><p>Photocall, roll-up, badges et goodies pour un salon.</p></div></article></div><p class="note">Les projets ci-dessus sont des exemples de prestations. Ils seront remplacés par nos réalisations clients, photos à l&#39;appui.</p></div></section></div><div class="page" data-route="faq"><header class="phead photo-bg" style="--bg:url('images/faq.jpg')" data-block="faq-head"><svg class="ghost" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/></svg><div class="wrap"><div class="crumb"><a href="#accueil">Accueil</a><span>/</span><span>FAQ</span></div><h1>Vos questions, nos réponses.</h1><p class="intro">Une autre question ? Écrivez-nous sur WhatsApp, nous répondons dans la journée.</p></div></header><section class="s" style="padding-top:48px" data-block="faq-list"><div class="wrap faq"><details open><summary>Quels supports pouvez-vous imprimer ?<i></i></summary><p>Tous les supports de communication : cartes de visite, flyers, affiches, plaquettes, brochures, magazines, bâches, kakémonos, roll-up, adhésifs, goodies et textile. Si un format manque à notre catalogue, nous le trouvons.</p></details><details><summary>Combien de temps pour obtenir un devis ?<i></i></summary><p>Moins de 24 heures après réception de votre besoin. Le devis précise le prix ferme, les quantités et le délai de livraison.</p></details><details><summary>Peut-on commander en petite quantité ?<i></i></summary><p>Oui, de 50 cartes de visite à plusieurs milliers de flyers. Le prix unitaire baisse avec la quantité ; nous vous conseillons le meilleur palier.</p></details><details><summary>Votre affichage est-il conforme à la réglementation ?<i></i></summary><p>Oui. Nos campagnes d&#39;affichage passent par des régies agréées, sur des emplacements autorisés. Aucun risque de démontage.</p></details><details><summary>Faut-il fournir ses propres fichiers ?<i></i></summary><p>Non. Nos graphistes créent vos visuels. Si vous avez déjà vos fichiers, nous les vérifions (format, résolution, fonds perdus) avant impression.</p></details><details><summary>Livrez-vous partout à Abidjan ?<i></i></summary><p>Oui, dans tout le district d&#39;Abidjan. Pour l&#39;intérieur du pays, l&#39;expédition ou la pose se fait sur devis.</p></details><details><summary>Comment se passe le paiement ?<i></i></summary><p>Un acompte est demandé à la validation du devis, le solde à la livraison. Les modalités exactes figurent sur chaque devis.</p></details></div></section></div><div class="page" data-route="contact"><header class="phead photo-bg" style="--bg:url('images/contact.jpg')" data-block="contact-head"><svg class="ghost" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/></svg><div class="wrap"><div class="crumb"><a href="#accueil">Accueil</a><span>/</span><span>Contact</span></div><h1>Parlons de votre projet.</h1><p class="intro">Devis gratuit sous 24 heures. Votre demande est rédigée automatiquement et envoyée sur WhatsApp en un geste.</p></div></header><section class="s" style="padding-top:48px" data-block="contact-form"><div class="wrap contact-grid"><div class="ccards"><div class="ccard"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg></span><div><small>Téléphone &amp; WhatsApp</small><b>+225 07 49 01 72 74</b></div></div><div class="ccard"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg></span><div><small>Ligne 2</small><b>+225 05 55 71 65 84</b></div></div><div class="ccard"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg></span><div><small>E-mail</small><b>dolouroupierre@gmail.com</b></div></div><div class="ccard"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><small>Zone d&#39;intervention</small><b>Abidjan et toute la Côte d&#39;Ivoire</b></div></div></div><div><form class="qf" id="qf" novalidate><h2>Votre demande de devis</h2><fieldset><legend>De quoi avez-vous besoin ?</legend><div class="opts"><input type="checkbox" id="opt-0" value="Impression tous supports"><label for="opt-0">Impression tous supports</label><input type="checkbox" id="opt-1" value="Branding &amp; identité visuelle"><label for="opt-1">Branding &amp; identité visuelle</label><input type="checkbox" id="opt-2" value="Affichage publicitaire"><label for="opt-2">Affichage publicitaire</label><input type="checkbox" id="opt-3" value="Couverture médias &amp; RP"><label for="opt-3">Couverture médias &amp; RP</label><input type="checkbox" id="opt-4" value="Gestion de campagnes 360°"><label for="opt-4">Gestion de campagnes 360°</label><input type="checkbox" id="opt-5" value="Réseaux sociaux &amp; contenus"><label for="opt-5">Réseaux sociaux &amp; contenus</label></div></fieldset><div><label class="f" for="q-desc">Décrivez votre projet</label><textarea id="q-desc" placeholder="Ex. : 500 flyers A5 et 2 roll-up pour un lancement le 5 décembre."></textarea></div><div class="two"><div><label class="f" for="q-delai">Pour quand ?</label><select id="q-delai"><option value="">Choisir</option><option>Urgent (moins de 72 h)</option><option>Cette semaine</option><option>Ce mois-ci</option><option>Pas de date précise</option></select></div><div><label class="f" for="q-budget">Budget estimé</label><select id="q-budget"><option value="">Je ne sais pas encore</option><option>Moins de 100 000 FCFA</option><option>100 000 à 500 000 FCFA</option><option>500 000 à 2 000 000 FCFA</option><option>Plus de 2 000 000 FCFA</option></select></div></div><div class="two"><div><label class="f" for="q-nom">Votre nom</label><input type="text" id="q-nom" autocomplete="name" placeholder="Nom et prénom"></div><div><label class="f" for="q-tel">Téléphone</label><input type="tel" id="q-tel" autocomplete="tel" placeholder="+225 …"></div></div><p class="err" id="q-err" role="alert"></p><div class="send"><button class="btn btn-or" type="submit">Préparer ma demande <svg class="arr"><use href="#arr"/></svg></button><small>Aucune donnée n&#39;est stockée sur ce site.</small></div></form><div class="result" id="result" hidden><h2>Votre demande est prête</h2><pre id="r-text"></pre><div class="send"><a class="btn btn-or" id="r-wa" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Envoyer sur WhatsApp</a><button class="btn btn-line" type="button" id="r-copy">Copier</button><button class="btn btn-line" type="button" id="r-edit">Modifier</button></div></div></div></div></section></div></main>
+<footer id="foot"><div class="wrap"><div class="f-grid"><div><a class="brand" href="#accueil" aria-label="VIZA"><svg viewBox="-4 -44 308 110" width="110" height="40" aria-hidden="true"><g transform="translate(0,-40) scale(.98)"><path fill="currentColor" d="M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z"/><path fill="#FF5B1F" d="M69 53C73 41 81 27 91 15 99 6 107 2 115 1.5L140 1C134 9 127 15 119 20 112 25 104 30 97 33 87 37 77 44 69 53Z"/></g><g transform="translate(146,0)" fill="currentColor"><g stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="1.5" y="1.5" width="15" height="59" rx="3"/><path d="M31 1.5h50v11L51 49.5h30v11H29v-11L59 12.5H31z"/><path d="M93 60.5 115.5 1.5h16l22.5 59h-16L123.5 21 109 60.5z"/></g><rect x="118" y="37" width="16" height="11" rx="2" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></g></svg></a><p class="pitch">Agence de communication 360° et imprimerie à Abidjan. On vous fait voir.</p></div><div><h4>Navigation</h4><ul><li><a href="#accueil">Accueil</a></li><li><a href="#agence">L&#39;agence</a></li><li><a href="#services">Services</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#faq">FAQ</a></li></ul></div><div><h4>Services</h4><ul><li><a href="#services" data-goto="srv-0">Impression tous supports</a></li><li><a href="#services" data-goto="srv-1">Branding &amp; identité visuelle</a></li><li><a href="#services" data-goto="srv-2">Affichage publicitaire</a></li><li><a href="#services" data-goto="srv-3">Couverture médias &amp; RP</a></li><li><a href="#services" data-goto="srv-4">Gestion de campagnes 360°</a></li><li><a href="#services" data-goto="srv-5">Réseaux sociaux &amp; contenus</a></li></ul></div><div><h4>Contact</h4><ul><li>+225 07 49 01 72 74</li><li>+225 05 55 71 65 84</li><li>dolouroupierre@gmail.com</li><li>Abidjan, Côte d&#39;Ivoire</li></ul></div></div><div class="legal"><span>© 2026 VIZA · Tous droits réservés</span><span>Fait à Abidjan</span></div></div></footer>
+<a class="fab" id="fab" href="https://wa.me/2250749017274?text=Bonjour%20VIZA%2C%20j&#39;aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>
+<div id="cms-root"></div>
+<script id="app">
+(function(){
+"use strict";
+var V={};
+var W='M10 14H32C36 14 39 16 41 19L68 58C80 49 92 44 102 41 110 39 115 35 119 30 122 41 117 50 109 57L96 70C90 78 86 85 82 90 78 95 72 97 65 97 59 97 54 94 50 89L5.5 17C6.5 15 8 14 10 14Z';
+var F='M69 53C73 41 81 27 91 15 99 6 107 2 115 1.5L140 1C134 9 127 15 119 20 112 25 104 30 97 33 87 37 77 44 69 53Z';
+var LOGO='<svg viewBox="-4 -44 308 110" width="94" height="34" aria-hidden="true"><g transform="translate(0,-40) scale(.98)"><path fill="currentColor" d="'+W+'"/><path fill="#FF5B1F" d="'+F+'"/></g><g transform="translate(146,0)" fill="currentColor"><g stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="1.5" y="1.5" width="15" height="59" rx="3"/><path d="M31 1.5h50v11L51 49.5h30v11H29v-11L59 12.5H31z"/><path d="M93 60.5 115.5 1.5h16l22.5 59h-16L123.5 21 109 60.5z"/></g><rect x="118" y="37" width="16" height="11" rx="2" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></g></svg>';
+var GHOST='<svg class="ghost" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="'+W+'"/></svg>';
+var DECO='<svg class="deco" viewBox="0 0 144 100" aria-hidden="true"><path fill="currentColor" d="'+W+'"/></svg>';
+var ARR='<svg class="arr"><use href="#arr"/></svg>';
+var ICONS={person:'<circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/>',balance:'<path d="M4 12h16M12 4v16"/><circle cx="12" cy="12" r="9"/>',camera:'<rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/>',star:'<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>',bolt:'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',heart:'<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/>'};
+var ROUTES=["accueil","agence","services","realisations","faq","contact"];
+var CI={phone:'<path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" stroke-linejoin="round"/>',mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/>',pin:'<path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>'};
+
+function e(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+var IMGMAP={},LIVE=true;
+function R(u){return (LIVE&&IMGMAP[u])||u;}
+function cssUrl(u){return u?"--bg:url('"+String(R(u)).replace(/['\\\n\r]/g,"")+"')":"";}
+function vis(img,illus,alt){return img?'<img src="'+e(R(img))+'" alt="'+e(alt||"")+'" loading="lazy" onerror="this.outerHTML=this.dataset.f" data-f="'+e(illusSvg(illus,alt))+'">':illusSvg(illus,alt);}
+function illusSvg(id,alt){return '<svg'+(alt?' role="img" aria-label="'+e(alt)+'"':' aria-hidden="true"')+'><use href="#'+e(id||"il-print")+'"/></svg>';}
+function wa(d,t){return "https://wa.me/"+String(d.site.whatsapp||"").replace(/\D/g,"")+"?text="+encodeURIComponent(t);}
+function phead(d,r,o,extra){return '<header class="phead photo-bg" style="'+cssUrl(o.image)+'" data-block="'+r+'-head">'+GHOST+'<div class="wrap"><div class="crumb"><a href="#accueil">'+e(d.site.menu.accueil)+'</a><span>/</span><span>'+e(d.site.menu[r])+'</span></div><h1>'+e(o.title)+'</h1><p class="intro">'+e(o.intro)+'</p>'+(extra||"")+'</div></header>';}
+function ctaBox(t,p,b1,b2,d){return '<div class="cta rv" data-block="cta"><div><h2>'+e(t)+'</h2><p>'+e(p)+'</p></div><div class="btns"><a class="btn btn-or" href="#contact">'+e(b1)+' '+ARR+'</a>'+(b2?'<a class="btn btn-line" href="'+e(wa(d,d.site.waDefault))+'" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>'+e(b2)+'</a>':'')+'</div>'+DECO+'</div>';}
+
+V.header=function(d){var m=d.site.menu;return '<div class="wrap"><a class="brand" href="#accueil" aria-label="'+e(d.seo.siteName)+'">'+LOGO+'</a><nav aria-label="Navigation principale"><ul class="menu">'+ROUTES.map(function(r){return '<li><a href="#'+r+'" data-nav="'+r+'">'+e(m[r])+'</a></li>';}).join("")+'</ul></nav><a class="btn btn-or" href="#contact">'+e(d.site.headerCta)+'</a><button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menu"><i></i><i></i></button></div>';};
+V.drawer=function(d){var m=d.site.menu;return '<div><ul>'+ROUTES.map(function(r){return '<li><a href="#'+r+'" data-nav="'+r+'">'+e(m[r])+'</a></li>';}).join("")+'</ul><a class="btn btn-or" href="#contact">'+e(d.site.headerCta)+'</a></div><div class="d-foot"><span>'+e(d.site.phone1)+'</span><span>'+e(d.site.city)+'</span></div>';};
+V.footer=function(d){var s=d.site,m=s.menu;return '<div class="wrap"><div class="f-grid"><div><a class="brand" href="#accueil" aria-label="'+e(d.seo.siteName)+'">'+LOGO.replace('width="94" height="34"','width="110" height="40"')+'</a><p class="pitch">'+e(s.footerPitch)+'</p></div><div><h4>'+e(s.footerNav)+'</h4><ul>'+ROUTES.slice(0,5).map(function(r){return '<li><a href="#'+r+'">'+e(m[r])+'</a></li>';}).join("")+'</ul></div><div><h4>'+e(s.footerServices)+'</h4><ul>'+d.services.items.map(function(it,i){return '<li><a href="#services" data-goto="srv-'+i+'">'+e(it.name)+'</a></li>';}).join("")+'</ul></div><div><h4>'+e(s.footerContact)+'</h4><ul><li>'+e(s.phone1)+'</li>'+(s.phone2?'<li>'+e(s.phone2)+'</li>':'')+'<li>'+e(s.email)+'</li><li>'+e(s.city)+'</li></ul></div></div><div class="legal"><span>'+e(s.legal)+'</span><span>'+e(s.made)+'</span></div></div>';};
+
+V.accueil=function(d){var h=d.home,items=d.services.items;
+ var tick=h.ticker.map(function(t){return '<span>'+e(t)+'</span>';}).join("");
+ var cards=items.map(function(it,i){if(it.home==="hidden")return "";return '<a class="svc-card'+(it.home==="large"?" wide":"")+' rv" href="#services" data-goto="srv-'+i+'"><div class="vis">'+vis(it.image,it.illus,"")+'</div><div class="body"><h3>'+e(it.name)+'</h3><p>'+e(it.short)+'</p><span class="more">'+e(h.discover)+' <svg><use href="#arr"/></svg></span></div></a>';}).join("");
+ var logos=function(hid){return h.partners.map(function(p){return '<div class="logo-slot"'+(hid?' aria-hidden="true"':'')+'>'+(p.logo?'<img src="'+e(R(p.logo))+'" alt="'+(hid?"":e(p.name))+'" loading="lazy">':'<span>'+e(p.name)+'</span>')+'</div>';}).join("");};
+ return '<section class="hero photo-bg" style="'+cssUrl(h.heroImage)+'" data-block="hero">'+GHOST+'<div class="wrap"><div class="txt"><span class="eyebrow">'+e(h.eyebrow)+'</span><h1 aria-label="'+e(h.lead+" "+(h.rotor[0]||""))+'"><span class="l1" aria-hidden="true">'+e(h.lead)+'</span><span class="rotor" aria-hidden="true">'+h.rotor.map(function(w,i){return '<span'+(i===0?' class="cur"':'')+'>'+e(w)+'</span>';}).join("")+'</span></h1><div class="ctas"><a class="btn btn-or" href="#contact">'+e(h.cta1)+' '+ARR+'</a><a class="btn btn-line" href="#services">'+e(h.cta2)+'</a></div></div><span class="scroll" aria-hidden="true">'+e(h.scroll)+'</span></div></section>'
+ +'<div class="ticker" aria-hidden="true" data-block="ticker"><div class="run">'+tick+tick+'</div></div>'
+ +'<section class="s" data-block="home-services"><div class="wrap"><div class="s-head"><div><span class="eyebrow">'+e(h.servicesEyebrow)+'</span><h2>'+e(h.servicesTitle)+'</h2></div><p>'+e(h.servicesText)+'</p></div><div class="bento">'+cards+'</div></div></section>'
+ +(h.partners.length?'<section class="s trust" style="padding-block:72px" data-block="partners"><div class="wrap"><div class="head"><div><span class="eyebrow">'+e(h.trustEyebrow)+'</span><h2>'+e(h.trustTitle)+'</h2></div><p>'+e(h.trustText)+'</p></div></div><div class="strip"><div class="run">'+logos(false)+logos(true)+'</div></div></section>':'')
+ +'<section class="s dark" data-block="method"><div class="wrap"><div class="s-head"><div><span class="eyebrow">'+e(h.methodEyebrow)+'</span><h2>'+e(h.methodTitle)+'</h2></div><p>'+e(h.methodText)+'</p></div><ol class="steps">'+h.steps.map(function(s,i){return '<li class="step rv"><span class="n">'+(i+1)+'</span><h3>'+e(s.title)+'</h3><p>'+e(s.text)+'</p><span class="when">'+e(s.when)+'</span></li>';}).join("")+'</ol></div></section>'
+ +'<section class="s" data-block="promises"><div class="wrap"><div class="promises">'+h.promises.map(function(p){return '<div class="promise rv"><b>'+e(p.big)+'</b><h3>'+e(p.title)+'</h3><p>'+e(p.text)+'</p></div>';}).join("")+'</div><div style="margin-top:80px">'+ctaBox(h.ctaTitle,h.ctaText,h.ctaButton,h.ctaWa,d)+'</div></div></section>';
+};
+V.agence=function(d){var a=d.agence;
+ var man=e(a.manifesto).replace(/\*([^*]+)\*/g,"<mark>$1</mark>");
+ return phead(d,"agence",a)
+ +'<section class="s" data-block="manifesto"><div class="wrap"><span class="eyebrow">'+e(a.convEyebrow)+'</span><p class="manifesto rv">'+man+'</p></div></section>'
+ +'<section class="s white" data-block="founder"><div class="wrap founder"><div class="portrait rv vis">'+(a.founderImage?'<img src="'+e(R(a.founderImage))+'" alt="'+e(a.founderName)+'">':illusSvg("il-founder",""))+'</div><div class="rv"><span class="eyebrow">'+e(a.founderEyebrow)+'</span><blockquote>'+e(a.quote)+'</blockquote><p class="who">'+e(a.founderName)+'<span>'+e(a.founderRole)+'</span></p><ul>'+a.points.map(function(p){return '<li><svg><use href="#ok"/></svg>'+e(p)+'</li>';}).join("")+'</ul></div></div></section>'
+ +'<section class="s" data-block="values"><div class="wrap"><div class="s-head"><div><span class="eyebrow">'+e(a.valuesEyebrow)+'</span><h2>'+e(a.valuesTitle)+'</h2></div><p>'+e(a.valuesText)+'</p></div><div class="values">'+a.values.map(function(v){return '<div class="value rv"><div class="ic"><svg viewBox="0 0 24 24">'+(ICONS[v.icon]||ICONS.star)+'</svg></div><h3>'+e(v.title)+'</h3><p>'+e(v.text)+'</p></div>';}).join("")+'</div><div style="margin-top:72px">'+ctaBox(a.ctaTitle,a.ctaText,a.ctaButton,"",d)+'</div></div></section>';
+};
+V.services=function(d){var s=d.services;
+ var nav='<div class="svc-nav">'+s.items.map(function(it,i){return '<button type="button" data-goto="srv-'+i+'">'+e(it.name)+'</button>';}).join("")+'</div>';
+ var cat='';
+ if(s.catalog.length){cat='<div class="catalog rv" data-block="catalog"><h3>'+e(s.catalogTitle)+'</h3><div class="tabs" role="tablist">'+s.catalog.map(function(c,i){return '<button class="tab" role="tab" type="button" data-tab="'+i+'" aria-selected="'+(i===0)+'"'+(i?' tabindex="-1"':'')+'>'+e(c.tab)+'</button>';}).join("")+'</div><div class="cat" role="tabpanel">'+V.catItems(d,0)+'</div></div>';}
+ var rows=s.items.map(function(it,i){return '<article class="svc-row" id="srv-'+i+'" data-block="srv-'+i+'"><div class="vis rv">'+vis(it.image,it.illus,it.name)+'</div><div class="rv"><span class="num">'+String(i+1).padStart(2,"0")+'</span><h2>'+e(it.name)+'</h2><p class="lead">'+e(it.text)+'</p><ul>'+it.tags.map(function(t){return '<li>'+e(t)+'</li>';}).join("")+'</ul><div class="act"><button class="btn btn-ink ask" type="button" data-svc="'+i+'">'+e(s.askLabel)+' '+ARR+'</button></div></div></article>'+(i===0?cat:"");}).join("");
+ return phead(d,"services",s,nav)+'<section class="s" style="padding-top:24px"><div class="wrap">'+rows+'</div></section>';
+};
+V.catItems=function(d,k){var c=d.services.catalog[k];if(!c)return "";return c.items.map(function(r,i){return '<div class="item" style="animation-delay:'+(i*.04)+'s"><h4>'+e(r.name)+'</h4><p>'+e(r.desc)+'</p><span class="d">'+e(d.services.delayLabel)+' : '+e(r.delay)+'</span></div>';}).join("");};
+V.realisations=function(d){var r=d.realisations;
+ var labels={};r.filters.forEach(function(f){labels[f.key]=f.label;});
+ return phead(d,"realisations",r)+'<section class="s" style="padding-top:48px" data-block="works"><div class="wrap"><div class="filters" role="group"><button type="button" data-f="all" aria-pressed="true">'+e(r.allLabel)+'</button>'+r.filters.map(function(f){return '<button type="button" data-f="'+e(f.key)+'" aria-pressed="false">'+e(f.label)+'</button>';}).join("")+'</div><div class="works">'+r.works.map(function(w){return '<article class="work rv" data-c="'+e(w.cat)+'"><div class="vis">'+vis(w.image,w.illus,w.title)+(w.example==="oui"?'<span class="badge">'+e(r.badge)+'</span>':'')+'</div><div class="body"><span class="cat-l">'+e(labels[w.cat]||w.cat)+'</span><h3>'+e(w.title)+'</h3><p>'+e(w.text)+'</p></div></article>';}).join("")+'</div>'+(r.note?'<p class="note">'+e(r.note)+'</p>':'')+'</div></section>';
+};
+V.faq=function(d){var f=d.faq;return phead(d,"faq",f)+'<section class="s" style="padding-top:48px" data-block="faq-list"><div class="wrap faq">'+f.items.map(function(q,i){return '<details'+(i===0?' open':'')+'><summary>'+e(q.q)+'<i></i></summary><p>'+e(q.a)+'</p></details>';}).join("")+'</div></section>';};
+V.contact=function(d){var c=d.contact,s=d.site;
+ function card(ic,l,v){return v?'<div class="ccard"><span class="ic"><svg viewBox="0 0 24 24">'+CI[ic]+'</svg></span><div><small>'+e(l)+'</small><b>'+e(v)+'</b></div></div>':'';}
+ return phead(d,"contact",c)+'<section class="s" style="padding-top:48px" data-block="contact-form"><div class="wrap contact-grid"><div class="ccards">'+card("phone",c.phoneLabel,s.phone1)+card("phone",c.phone2Label,s.phone2)+card("mail",c.emailLabel,s.email)+card("pin",c.zoneLabel,s.zone)+'</div><div><form class="qf" id="qf" novalidate><h2>'+e(c.formTitle)+'</h2><fieldset><legend>'+e(c.legend)+'</legend><div class="opts">'+d.services.items.map(function(it,i){return '<input type="checkbox" id="opt-'+i+'" value="'+e(it.name)+'"><label for="opt-'+i+'">'+e(it.name)+'</label>';}).join("")+'</div></fieldset><div><label class="f" for="q-desc">'+e(c.descLabel)+'</label><textarea id="q-desc" placeholder="'+e(c.descPh)+'"></textarea></div><div class="two"><div><label class="f" for="q-delai">'+e(c.delaiLabel)+'</label><select id="q-delai"><option value="">'+e(c.choose)+'</option>'+c.delais.map(function(o){return '<option>'+e(o)+'</option>';}).join("")+'</select></div><div><label class="f" for="q-budget">'+e(c.budgetLabel)+'</label><select id="q-budget"><option value="">'+e(c.budgetNone)+'</option>'+c.budgets.map(function(o){return '<option>'+e(o)+'</option>';}).join("")+'</select></div></div><div class="two"><div><label class="f" for="q-nom">'+e(c.nameLabel)+'</label><input type="text" id="q-nom" autocomplete="name" placeholder="'+e(c.namePh)+'"></div><div><label class="f" for="q-tel">'+e(c.telLabel)+'</label><input type="tel" id="q-tel" autocomplete="tel" placeholder="'+e(c.telPh)+'"></div></div><p class="err" id="q-err" role="alert"></p><div class="send"><button class="btn btn-or" type="submit">'+e(c.submit)+' '+ARR+'</button><small>'+e(c.privacy)+'</small></div></form><div class="result" id="result" hidden><h2>'+e(c.resultTitle)+'</h2><pre id="r-text"></pre><div class="send"><a class="btn btn-or" id="r-wa" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>'+e(c.sendWa)+'</a><button class="btn btn-line" type="button" id="r-copy">'+e(c.copy)+'</button><button class="btn btn-line" type="button" id="r-edit">'+e(c.edit)+'</button></div></div></div></div></section>';
+};
+V.pages=function(d){return ROUTES.map(function(r){return '<div class="page" data-route="'+r+'">'+V[r](d)+'</div>';}).join("");};
+V.jsonld=function(d){var s=d.site;return JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","name":d.seo.siteName,"slogan":d.seo.slogan,"description":d.seo.accueil.description,"telephone":[s.phone1,s.phone2].filter(Boolean),"email":s.email,"address":{"@type":"PostalAddress","addressLocality":"Abidjan","addressCountry":"CI"},"areaServed":s.zone,"hasOfferCatalog":{"@type":"OfferCatalog","name":"Services","itemListElement":d.services.items.map(function(it){return{"@type":"Offer","itemOffered":{"@type":"Service","name":it.name,"description":it.text}};})}},{"@type":"FAQPage","mainEntity":d.faq.items.map(function(q){return{"@type":"Question","name":q.q,"acceptedAnswer":{"@type":"Answer","text":q.a}};})}]}).replace(/</g,"\\u003c");};
+if(typeof module!=="undefined"){module.exports=V;return;}
+
+/* ===================== Site ===================== */
+var DATA_EL=document.getElementById("viza-data");
+var PUBLISHED=JSON.parse(DATA_EL.textContent);
+var D=JSON.parse(JSON.stringify(PUBLISHED));
+var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var top=document.getElementById("top"),drawer=document.getElementById("drawer"),pages=document.getElementById("pages"),foot=document.getElementById("foot"),fab=document.getElementById("fab");
+var rotorTimer=null,pendingScroll=null,current="accueil";
+
+function renderAll(keepRoute){
+  top.innerHTML=V.header(D);drawer.innerHTML=V.drawer(D);pages.innerHTML=V.pages(D);foot.innerHTML=V.footer(D);
+  fab.href=wa(D,D.site.waDefault);
+  var ld=document.getElementById("viza-ld");if(!ld){ld=document.createElement("script");ld.type="application/ld+json";ld.id="viza-ld";document.head.appendChild(ld);}ld.textContent=V.jsonld(D);
+  show(keepRoute);startRotor();
+}
+function routeOf(){var r=(location.hash||"").slice(1);return ROUTES.indexOf(r)<0?"accueil":r;}
+function show(keep){
+  var r=routeOf();current=r;
+  [].forEach.call(pages.children,function(p){p.classList.toggle("on",p.dataset.route===r);});
+  document.querySelectorAll("[data-nav]").forEach(function(a){if(a.dataset.nav===r)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});
+  var seo=D.seo[r]||{};document.title=seo.title||D.seo.siteName;
+  var md=document.querySelector('meta[name="description"]');if(md&&seo.description)md.setAttribute("content",seo.description);
+  setMenu(false);
+  if(keep)return;
+  if(pendingScroll){var el=document.getElementById(pendingScroll);pendingScroll=null;if(el)setTimeout(function(){el.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});},60);}
+  else window.scrollTo(0,0);
+}
+function setMenu(open){var b=top.querySelector(".burger");if(!b)return;b.setAttribute("aria-expanded",open);drawer.classList.toggle("open",open);drawer.setAttribute("aria-hidden",!open);top.classList.toggle("menu-open",open);document.body.style.overflow=open?"hidden":"";}
+function startRotor(){
+  if(rotorTimer){clearInterval(rotorTimer);rotorTimer=null;}
+  var rotor=pages.querySelector(".rotor");if(!rotor)return;
+  var words=[].slice.call(rotor.children),wi=0;
+  function fit(){if(words[wi])rotor.style.width="calc("+words[wi].getBoundingClientRect().width+"px + .4em)";}
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);fit();
+  rotor._fit=fit;
+  if(reduce||words.length<2)return;
+  rotorTimer=setInterval(function(){
+    var cur=words[wi];cur.classList.remove("cur");cur.classList.add("out");
+    wi=(wi+1)%words.length;var nx=words[wi];nx.classList.remove("out");void nx.offsetWidth;nx.classList.add("cur");fit();
+    setTimeout(function(){cur.style.transition="none";cur.classList.remove("out");void cur.offsetWidth;cur.style.transition="";},750);
+  },2400);
+}
+addEventListener("resize",function(){var r=pages.querySelector(".rotor");if(r&&r._fit)r._fit();});
+addEventListener("hashchange",function(){show(false);});
+addEventListener("scroll",function(){top.classList.toggle("scrolled",scrollY>8);},{passive:true});
+addEventListener("keydown",function(ev){if(ev.key==="Escape")setMenu(false);});
+document.addEventListener("click",function(ev){
+  var t=ev.target;
+  if(t.closest(".burger")){setMenu(top.querySelector(".burger").getAttribute("aria-expanded")!=="true");return;}
+  var g=t.closest("[data-goto]");
+  if(g){pendingScroll=g.dataset.goto;if(location.hash==="#services"){ev.preventDefault();show(false);}else if(g.tagName==="BUTTON"){location.hash="services";}return;}
+  var tab=t.closest(".tab");
+  if(tab){var box=tab.closest(".catalog");box.querySelectorAll(".tab").forEach(function(b){var on=b===tab;b.setAttribute("aria-selected",on);b.tabIndex=on?0:-1;});box.querySelector(".cat").innerHTML=V.catItems(D,+tab.dataset.tab);return;}
+  var fb=t.closest(".filters button");
+  if(fb){var wrap=fb.closest(".wrap");wrap.querySelectorAll(".filters button").forEach(function(o){o.setAttribute("aria-pressed",o===fb);});wrap.querySelectorAll(".work").forEach(function(w){w.hidden=!(fb.dataset.f==="all"||w.dataset.c===fb.dataset.f);});return;}
+  var ask=t.closest(".ask");
+  if(ask){location.hash="contact";setTimeout(function(){document.querySelectorAll(".opts input").forEach(function(i){i.checked=(i.id==="opt-"+ask.dataset.svc);});var f=document.getElementById("qf"),r=document.getElementById("result");if(f){f.hidden=false;r.hidden=true;}},30);return;}
+  if(t.closest("#r-edit")){document.getElementById("result").hidden=true;document.getElementById("qf").hidden=false;return;}
+  var cp=t.closest("#r-copy");
+  if(cp){var pre=document.getElementById("r-text");var fbk=function(){var rg=document.createRange();rg.selectNodeContents(pre);var sl=getSelection();sl.removeAllRanges();sl.addRange(rg);};try{navigator.clipboard.writeText(pre.textContent).then(function(){cp.textContent="✓";setTimeout(function(){cp.textContent=D.contact.copy;},1800);},fbk);}catch(x){fbk();}}
+});
+document.addEventListener("submit",function(ev){
+  if(ev.target.id!=="qf")return;ev.preventDefault();
+  var c=D.contact,err=document.getElementById("q-err");function v(id){return document.getElementById(id).value.trim();}
+  var o=[].map.call(document.querySelectorAll(".opts input:checked"),function(i){return i.value;});
+  if(!o.length&&!v("q-desc")){err.textContent=c.errNeed;return;}
+  if(!v("q-nom")){err.textContent=c.errName;document.getElementById("q-nom").focus();return;}
+  err.textContent="";
+  var L=[c.waIntro,""];if(o.length)L.push(c.legend.replace(/\s*\?$/,"")+" : "+o.join(", "));if(v("q-desc"))L.push(c.descLabel+" : "+v("q-desc"));if(v("q-delai"))L.push(c.delaiLabel.replace(/\s*\?$/,"")+" : "+v("q-delai"));if(v("q-budget"))L.push(c.budgetLabel+" : "+v("q-budget"));
+  L.push("",c.nameLabel+" : "+v("q-nom"));if(v("q-tel"))L.push(c.telLabel+" : "+v("q-tel"));
+  var txt=L.join("\n");document.getElementById("r-text").textContent=txt;document.getElementById("r-wa").href=wa(D,txt);
+  document.getElementById("qf").hidden=true;document.getElementById("result").hidden=false;
+});
+renderAll(false);
+
+/* ===================== CMS ===================== */
+var G=function(p){return p.reduce(function(o,k){return o==null?o:o[k];},D);};
+var S=function(p,v){var o=D;for(var i=0;i<p.length-1;i++)o=o[p[i]];o[p[p.length-1]]=v;};
+var ILLUS=[["il-print","Impression"],["il-brand","Branding"],["il-bill","Affichage"],["il-media","Médias"],["il-camp","Campagne"],["il-social","Réseaux sociaux"]];
+function T(k,label,o){o=o||{};o.k=k;o.label=label;o.type=o.type||"text";return o;}
+function A(k,label,o){o=o||{};o.type="area";return T(k,label,o);}
+function I(k,label,o){o=o||{};o.type="image";return T(k,label,o);}
+function SL(k,label,o){o=o||{};o.type="strings";return T(k,label,o);}
+function L(k,label,item,blank,o){o=o||{};o.type="list";o.item=item;o.blank=blank;return T(k,label,o);}
+function SE(k,label,options,o){o=o||{};o.type="select";o.options=options;return T(k,label,o);}
+var IMGHINT="Photo paysage, au moins 1920 px de large. Elle est compressée automatiquement.";
+var SCHEMA=[
+ {id:"accueil",label:"Accueil",route:"accueil",groups:[
+  {t:"Hero (haut de page)",b:"hero",f:[I("home.heroImage","Image de fond",{hint:IMGHINT,max:1920}),T("home.eyebrow","Petit titre"),T("home.lead","Début du grand titre"),SL("home.rotor","Mots qui défilent",{hint:"Un mot par ligne, dans l'ordre d'apparition."}),T("home.cta1","Bouton principal"),T("home.cta2","Bouton secondaire"),T("home.scroll","Indication « Défiler »")]},
+  {t:"Bandeau défilant",b:"ticker",f:[SL("home.ticker","Éléments du bandeau")]},
+  {t:"Section Services",b:"home-services",f:[T("home.servicesEyebrow","Petit titre"),T("home.servicesTitle","Titre"),A("home.servicesText","Texte"),T("home.discover","Lien des cartes"),{type:"note",text:"Les cartes reprennent les services. Choisissez leur affichage (grande, petite ou masquée) dans l'onglet Services."}]},
+  {t:"Ils nous font confiance",b:"partners",f:[T("home.trustEyebrow","Petit titre"),T("home.trustTitle","Titre"),A("home.trustText","Texte"),L("home.partners","Partenaires",[T("name","Nom du partenaire"),I("logo","Logo",{hint:"PNG à fond transparent de préférence.",max:600,png:true,contain:true})],{name:"Nouveau partenaire",logo:""},{title:"name"})]},
+  {t:"Notre méthode",b:"method",f:[T("home.methodEyebrow","Petit titre"),T("home.methodTitle","Titre"),A("home.methodText","Texte"),L("home.steps","Étapes",[T("title","Titre"),A("text","Texte"),T("when","Délai")],{title:"Nouvelle étape",text:"",when:""},{title:"title"})]},
+  {t:"Engagements",b:"promises",f:[L("home.promises","Engagements",[T("big","Chiffre clé"),T("title","Titre"),A("text","Texte")],{big:"",title:"Nouvel engagement",text:""},{title:"title"})]},
+  {t:"Bloc d'appel (bas de page)",b:"cta",f:[T("home.ctaTitle","Titre"),T("home.ctaText","Texte"),T("home.ctaButton","Bouton devis"),T("home.ctaWa","Bouton WhatsApp")]}
+ ]},
+ {id:"agence",label:"L'agence",route:"agence",groups:[
+  {t:"En-tête de page",b:"agence-head",f:[I("agence.image","Image de fond",{hint:IMGHINT,max:1920}),T("agence.title","Titre"),A("agence.intro","Introduction")]},
+  {t:"Conviction",b:"manifesto",f:[T("agence.convEyebrow","Petit titre"),A("agence.manifesto","Texte",{hint:"Entourez un mot d'astérisques pour le mettre en orange, par exemple *visible*."})]},
+  {t:"Fondateur",b:"founder",f:[T("agence.founderEyebrow","Petit titre"),I("agence.founderImage","Portrait",{hint:"Format portrait (vertical) de préférence.",max:1200}),A("agence.quote","Citation"),T("agence.founderName","Nom"),T("agence.founderRole","Fonction"),SL("agence.points","Points forts")]},
+  {t:"Valeurs",b:"values",f:[T("agence.valuesEyebrow","Petit titre"),T("agence.valuesTitle","Titre"),A("agence.valuesText","Texte"),L("agence.values","Valeurs",[SE("icon","Icône",[["person","Personne"],["balance","Équilibre"],["camera","Appareil photo"],["star","Étoile"],["bolt","Éclair"],["heart","Cœur"]]),T("title","Titre"),A("text","Texte")],{icon:"star",title:"Nouvelle valeur",text:""},{title:"title"})]},
+  {t:"Bloc d'appel",b:"cta",f:[T("agence.ctaTitle","Titre"),T("agence.ctaText","Texte"),T("agence.ctaButton","Bouton")]}
+ ]},
+ {id:"services",label:"Services",route:"services",groups:[
+  {t:"En-tête de page",b:"services-head",f:[I("services.image","Image de fond",{hint:IMGHINT,max:1920}),T("services.title","Titre"),A("services.intro","Introduction"),T("services.askLabel","Bouton « Demander un devis »")]},
+  {t:"Liste des services",b:"srv-0",f:[L("services.items","Services",[T("name","Nom du service"),A("short","Résumé (cartes de l'accueil)"),A("text","Description complète"),SL("tags","Prestations (étiquettes)"),I("image","Photo",{hint:"Format 4:3, au moins 1600 px de large.",max:1600}),SE("illus","Illustration de secours (sans photo)",ILLUS),SE("home","Carte sur l'accueil",[["large","Grande"],["small","Petite"],["hidden","Masquée"]])],{id:"",name:"Nouveau service",short:"",text:"",tags:[],image:"",illus:"il-print",home:"small"},{title:"name"})]},
+  {t:"Catalogue impression",b:"catalog",f:[T("services.catalogTitle","Titre du catalogue"),T("services.delayLabel","Libellé du délai"),L("services.catalog","Onglets",[T("tab","Nom de l'onglet"),L("items","Supports",[T("name","Support"),T("desc","Formats et finitions"),T("delay","Délai")],{name:"Nouveau support",desc:"",delay:""},{title:"name"})],{tab:"Nouvel onglet",items:[]},{title:"tab"})]}
+ ]},
+ {id:"realisations",label:"Réalisations",route:"realisations",groups:[
+  {t:"En-tête de page",b:"realisations-head",f:[I("realisations.image","Image de fond",{hint:IMGHINT,max:1920}),T("realisations.title","Titre"),A("realisations.intro","Introduction")]},
+  {t:"Catégories (filtres)",b:"works",f:[T("realisations.allLabel","Bouton « Tous »"),L("realisations.filters","Catégories",[T("label","Nom affiché"),T("key","Code (sans espace)",{hint:"Sert à relier les projets à leur catégorie."})],{key:"nouvelle",label:"Nouvelle catégorie"},{title:"label"})]},
+  {t:"Projets",b:"works",f:[T("realisations.badge","Étiquette des exemples"),L("realisations.works","Projets",[T("title","Titre"),SE("cat","Catégorie",function(){return D.realisations.filters.map(function(f){return[f.key,f.label];});}),A("text","Description"),I("image","Photo",{hint:"Format 4:3.",max:1600}),SE("illus","Illustration de secours",ILLUS),SE("example","Afficher l'étiquette « Exemple »",[["non","Non"],["oui","Oui"]])],{title:"Nouveau projet",cat:"impression",text:"",image:"",illus:"il-print",example:"non"},{title:"title"}),A("realisations.note","Note sous la galerie",{hint:"Laissez vide pour la masquer."})]}
+ ]},
+ {id:"faq",label:"FAQ",route:"faq",groups:[
+  {t:"En-tête de page",b:"faq-head",f:[I("faq.image","Image de fond",{hint:IMGHINT,max:1920}),T("faq.title","Titre"),A("faq.intro","Introduction")]},
+  {t:"Questions",b:"faq-list",f:[L("faq.items","Questions et réponses",[T("q","Question"),A("a","Réponse")],{q:"Nouvelle question",a:""},{title:"q"})]}
+ ]},
+ {id:"contact",label:"Contact",route:"contact",groups:[
+  {t:"En-tête de page",b:"contact-head",f:[I("contact.image","Image de fond",{hint:IMGHINT,max:1920}),T("contact.title","Titre"),A("contact.intro","Introduction")]},
+  {t:"Cartes de contact",b:"contact-form",f:[T("contact.phoneLabel","Libellé téléphone 1"),T("contact.phone2Label","Libellé téléphone 2"),T("contact.emailLabel","Libellé e-mail"),T("contact.zoneLabel","Libellé zone"),{type:"note",text:"Les numéros et l'e-mail se modifient dans l'onglet Général."}]},
+  {t:"Formulaire de devis",b:"contact-form",f:[T("contact.formTitle","Titre du formulaire"),T("contact.legend","Question des services"),T("contact.descLabel","Libellé description"),T("contact.descPh","Exemple dans le champ"),T("contact.delaiLabel","Libellé délai"),T("contact.choose","Option vide du délai"),SL("contact.delais","Choix de délai"),T("contact.budgetLabel","Libellé budget"),T("contact.budgetNone","Option vide du budget"),SL("contact.budgets","Choix de budget"),T("contact.nameLabel","Libellé nom"),T("contact.namePh","Exemple nom"),T("contact.telLabel","Libellé téléphone"),T("contact.telPh","Exemple téléphone"),T("contact.submit","Bouton d'envoi"),T("contact.privacy","Mention de confidentialité"),T("contact.errNeed","Erreur : aucun service"),T("contact.errName","Erreur : nom manquant")]},
+  {t:"Écran de confirmation",b:"contact-form",f:[T("contact.resultTitle","Titre"),T("contact.waIntro","Première ligne du message WhatsApp"),T("contact.sendWa","Bouton WhatsApp"),T("contact.copy","Bouton copier"),T("contact.edit","Bouton modifier")]}
+ ]},
+ {id:"general",label:"Général",route:null,groups:[
+  {t:"Coordonnées",f:[T("site.phone1","Téléphone principal"),T("site.whatsapp","Numéro WhatsApp",{hint:"Format international, chiffres seulement. Exemple : 2250749017274."}),T("site.phone2","Téléphone 2",{hint:"Laissez vide pour le masquer."}),T("site.email","E-mail"),T("site.city","Ville"),T("site.zone","Zone d'intervention"),T("site.waDefault","Message WhatsApp par défaut")]},
+  {t:"Menu et en-tête",f:[T("site.menu.accueil","Menu : Accueil"),T("site.menu.agence","Menu : L'agence"),T("site.menu.services","Menu : Services"),T("site.menu.realisations","Menu : Réalisations"),T("site.menu.faq","Menu : FAQ"),T("site.menu.contact","Menu : Contact"),T("site.headerCta","Bouton de l'en-tête")]},
+  {t:"Pied de page",f:[A("site.footerPitch","Présentation"),T("site.footerNav","Titre colonne navigation"),T("site.footerServices","Titre colonne services"),T("site.footerContact","Titre colonne contact"),T("site.legal","Mention légale"),T("site.made","Mention de droite")]}
+ ]},
+ {id:"seo",label:"Référencement",route:null,groups:[
+  {t:"Identité",f:[T("seo.siteName","Nom du site"),T("seo.slogan","Slogan")]},
+  {t:"Accueil",f:[T("seo.accueil.title","Titre Google"),A("seo.accueil.description","Description Google")]},
+  {t:"L'agence",f:[T("seo.agence.title","Titre Google"),A("seo.agence.description","Description Google")]},
+  {t:"Services",f:[T("seo.services.title","Titre Google"),A("seo.services.description","Description Google")]},
+  {t:"Réalisations",f:[T("seo.realisations.title","Titre Google"),A("seo.realisations.description","Description Google")]},
+  {t:"FAQ",f:[T("seo.faq.title","Titre Google"),A("seo.faq.description","Description Google")]},
+  {t:"Contact",f:[T("seo.contact.title","Titre Google"),A("seo.contact.description","Description Google")]}
+ ]}
+];
+var ICO={up:'<path d="M12 19V5M6 11l6-6 6 6"/>',down:'<path d="M12 5v14M6 13l6 6 6-6"/>',del:'<path d="M5 7h14M9 7V4h6v3M7 7l1 13h8l1-13"/>',dup:'<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/>',x:'<path d="M6 6l12 12M18 6 6 18"/>',eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',pen:'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M14 6l4 4"/>'};
+function svgI(n){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+ICO[n]+'</svg>';}
+function el(tag,attrs,html){var x=document.createElement(tag);if(attrs)Object.keys(attrs).forEach(function(k){if(k==="class")x.className=attrs[k];else if(k==="text")x.textContent=attrs[k];else x.setAttribute(k,attrs[k]);});if(html!=null)x.innerHTML=html;return x;}
+var cms=null,curTab="accueil",dirty=false,liveTimer=null,artifactNS=null,uid=0;
+
+function changed(){
+  dirty=JSON.stringify(D)!==JSON.stringify(PUBLISHED);
+  try{if(dirty)localStorage.setItem("viza-cms-draft",JSON.stringify({at:Date.now(),data:D}));else localStorage.removeItem("viza-cms-draft");}catch(x){}
+  updateFoot();
+  clearTimeout(liveTimer);liveTimer=setTimeout(function(){var y=scrollY;renderAll(true);window.scrollTo(0,y);},180);
+}
+function fieldText(f,path,multi){
+  var id="cf"+(++uid),w=el("div",{class:"cms-f"});
+  w.appendChild(el("label",{for:id,text:f.label}));
+  var inp=multi?el("textarea",{id:id}):el("input",{type:"text",id:id});
+  inp.value=G(path)||"";inp.addEventListener("input",function(){S(path,inp.value);changed();});
+  w.appendChild(inp);if(f.hint)w.appendChild(el("span",{class:"hint",text:f.hint}));return w;
+}
+function fieldSelect(f,path){
+  var id="cf"+(++uid),w=el("div",{class:"cms-f"});w.appendChild(el("label",{for:id,text:f.label}));
+  var s=el("select",{id:id}),opts=typeof f.options==="function"?f.options():f.options;
+  opts.forEach(function(o){var op=el("option",{value:o[0],text:o[1]});s.appendChild(op);});
+  s.value=G(path);s.addEventListener("change",function(){S(path,s.value);changed();if(f.rerender)renderPanel();});
+  w.appendChild(s);if(f.hint)w.appendChild(el("span",{class:"hint",text:f.hint}));return w;
+}
+function compress(file,max,png){
+  return new Promise(function(res,rej){
+    var rd=new FileReader();rd.onerror=rej;rd.onload=function(){
+      var im=new Image();im.onerror=function(){rej(new Error("img"));};im.onload=function(){
+        var sc=Math.min(1,max/Math.max(im.width,im.height)),w=Math.round(im.width*sc),h=Math.round(im.height*sc);
+        var c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");
+        if(!png){x.fillStyle="#fff";x.fillRect(0,0,w,h);}
+        x.drawImage(im,0,0,w,h);res(c.toDataURL(png?"image/png":"image/jpeg",0.82));
+      };im.src=rd.result;};rd.readAsDataURL(file);
+  });
+}
+function fieldImage(f,path){
+  var w=el("div",{class:"cms-f"});w.appendChild(el("span",{class:"lab",text:f.label}));
+  var row=el("div",{class:"cms-img"}),th=el("div",{class:"th"+(f.contain?" contain":"")}),acts=el("div",{class:"acts"});
+  function paint(){var v=G(path);th.style.backgroundImage=v?"url('"+String(R(v)).replace(/'/g,"")+"')":"";th.textContent=v?"":"Aucune image";}
+  paint();
+  var fi=el("input",{type:"file",accept:"image/*",hidden:""}),pick=el("button",{type:"button",class:"cms-sbtn",text:"Choisir une image"}),rm=el("button",{type:"button",class:"cms-sbtn danger",text:"Retirer"});
+  pick.addEventListener("click",function(){fi.click();});
+  fi.addEventListener("change",function(){var file=fi.files[0];if(!file)return;pick.textContent="Compression…";compress(file,f.max||1600,!!f.png&&/png|svg/.test(file.type)).then(function(u){S(path,u);paint();changed();pick.textContent="Changer l'image";}).catch(function(){pick.textContent="Image illisible, réessayez";});fi.value="";});
+  rm.addEventListener("click",function(){S(path,"");paint();changed();});
+  acts.appendChild(pick);acts.appendChild(rm);acts.appendChild(fi);row.appendChild(th);row.appendChild(acts);w.appendChild(row);
+  if(f.hint)w.appendChild(el("span",{class:"hint",text:f.hint}));return w;
+}
+function fieldStrings(f,path){
+  var w=el("div",{class:"cms-f"});w.appendChild(el("span",{class:"lab",text:f.label}));
+  var box=el("div",{class:"cms-list"});w.appendChild(box);
+  function draw(){box.innerHTML="";var arr=G(path)||[];
+    arr.forEach(function(v,i){var r=el("div",{class:"cms-str"}),inp=el("input",{type:"text","aria-label":f.label+" "+(i+1)});inp.value=v;
+      inp.addEventListener("input",function(){G(path)[i]=inp.value;changed();});
+      var up=el("button",{type:"button",class:"cms-mini",title:"Monter","aria-label":"Monter"},svgI("up"));up.disabled=i===0;
+      var dn=el("button",{type:"button",class:"cms-mini",title:"Descendre","aria-label":"Descendre"},svgI("down"));dn.disabled=i===arr.length-1;
+      var dl=el("button",{type:"button",class:"cms-mini",title:"Supprimer","aria-label":"Supprimer"},svgI("del"));
+      up.onclick=function(){var a=G(path);a.splice(i-1,0,a.splice(i,1)[0]);changed();draw();};
+      dn.onclick=function(){var a=G(path);a.splice(i+1,0,a.splice(i,1)[0]);changed();draw();};
+      dl.onclick=function(){G(path).splice(i,1);changed();draw();};
+      r.appendChild(inp);r.appendChild(up);r.appendChild(dn);r.appendChild(dl);box.appendChild(r);});
+    var add=el("button",{type:"button",class:"cms-sbtn add",text:"+ Ajouter"});add.onclick=function(){G(path).push("");changed();draw();var ins=box.querySelectorAll("input");if(ins.length)ins[ins.length-1].focus();};box.appendChild(add);
+  }
+  draw();if(f.hint)w.appendChild(el("span",{class:"hint",text:f.hint}));return w;
+}
+function fieldList(f,path){
+  var w=el("div",{class:"cms-f"});w.appendChild(el("span",{class:"lab",text:f.label}));
+  var box=el("div",{class:"cms-list"});w.appendChild(box);var openIdx={};
+  function draw(){box.innerHTML="";var arr=G(path)||[];
+    arr.forEach(function(it,i){
+      var card=el("div",{class:"cms-item"+(openIdx[i]?" open":"")}),hd=el("div",{class:"hd"}),bd=el("div",{class:"bd"});
+      var ttl=el("b",{text:(f.title&&it[f.title])||f.label+" "+(i+1)});
+      hd.appendChild(el("span",{class:"n",text:String(i+1)}));hd.appendChild(ttl);
+      var up=el("button",{type:"button",class:"cms-mini","aria-label":"Monter",title:"Monter"},svgI("up"));up.disabled=i===0;
+      var dn=el("button",{type:"button",class:"cms-mini","aria-label":"Descendre",title:"Descendre"},svgI("down"));dn.disabled=i===arr.length-1;
+      var cp=el("button",{type:"button",class:"cms-mini","aria-label":"Dupliquer",title:"Dupliquer"},svgI("dup"));
+      var dl=el("button",{type:"button",class:"cms-mini","aria-label":"Supprimer",title:"Supprimer"},svgI("del"));
+      [up,dn,cp,dl].forEach(function(b){hd.appendChild(b);b.addEventListener("click",function(ev){ev.stopPropagation();});});
+      up.onclick=function(ev){ev.stopPropagation();var a=G(path);a.splice(i-1,0,a.splice(i,1)[0]);openIdx={};changed();draw();};
+      dn.onclick=function(ev){ev.stopPropagation();var a=G(path);a.splice(i+1,0,a.splice(i,1)[0]);openIdx={};changed();draw();};
+      cp.onclick=function(ev){ev.stopPropagation();var a=G(path);a.splice(i+1,0,JSON.parse(JSON.stringify(a[i])));openIdx={};openIdx[i+1]=true;changed();draw();};
+      dl.onclick=function(ev){ev.stopPropagation();if(dl.dataset.sure){G(path).splice(i,1);openIdx={};changed();draw();}else{dl.dataset.sure="1";dl.style.borderColor="#B42318";dl.style.color="#B42318";dl.title="Cliquez encore pour supprimer";setTimeout(function(){delete dl.dataset.sure;dl.style.borderColor="";dl.style.color="";},2500);}};
+      hd.addEventListener("click",function(){openIdx[i]=!openIdx[i];card.classList.toggle("open");});
+      f.item.forEach(function(sf){var p=path.concat([i],sf.k.split("."));var node=buildField(sf,p);if(sf.k===f.title){var inp=node.querySelector("input,textarea");if(inp)inp.addEventListener("input",function(){ttl.textContent=inp.value||f.label+" "+(i+1);});}bd.appendChild(node);});
+      card.appendChild(hd);card.appendChild(bd);box.appendChild(card);
+    });
+    var add=el("button",{type:"button",class:"cms-sbtn add",text:"+ Ajouter"});
+    add.onclick=function(){var a=G(path);a.push(JSON.parse(JSON.stringify(f.blank)));openIdx={};openIdx[a.length-1]=true;changed();draw();};
+    box.appendChild(add);
+  }
+  draw();return w;
+}
+function buildField(f,path){
+  if(f.type==="note")return el("p",{class:"hint",text:f.text});
+  path=path||f.k.split(".");
+  if(f.type==="text")return fieldText(f,path,false);
+  if(f.type==="area")return fieldText(f,path,true);
+  if(f.type==="image")return fieldImage(f,path);
+  if(f.type==="strings")return fieldStrings(f,path);
+  if(f.type==="list")return fieldList(f,path);
+  if(f.type==="select")return fieldSelect(f,path);
+}
+function flash(block){
+  if(!block)return;var t=document.querySelector('.page.on [data-block="'+block+'"]');if(!t)return;
+  t.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});t.classList.add("cms-flash");setTimeout(function(){t.classList.remove("cms-flash");},1200);
+}
+function renderPanel(){
+  var body=cms.querySelector(".cms-body");body.innerHTML="";
+  cms.querySelectorAll(".cms-nav button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.tab===curTab);});
+  var sec=SCHEMA.filter(function(s){return s.id===curTab;})[0];
+  var draft=null;try{draft=JSON.parse(localStorage.getItem("viza-cms-draft")||"null");}catch(x){}
+  if(draft&&!dirty&&JSON.stringify(draft.data)!==JSON.stringify(PUBLISHED)){
+    var bn=el("div",{class:"cms-banner"});bn.appendChild(el("span",{text:"Vous avez des modifications non publiées du "+new Date(draft.at).toLocaleString("fr-FR")+"."}));
+    var r=el("div",{class:"row"}),b1=el("button",{type:"button",class:"cms-sbtn",text:"Reprendre"}),b2=el("button",{type:"button",class:"cms-sbtn danger",text:"Les supprimer"});
+    b1.onclick=function(){D=draft.data;changed();renderPanel();};b2.onclick=function(){try{localStorage.removeItem("viza-cms-draft");}catch(x){}renderPanel();};
+    r.appendChild(b1);r.appendChild(b2);bn.appendChild(r);body.appendChild(bn);
+  }
+  var help={accueil:"Modifiez un champ : l'aperçu se met à jour en direct. Ouvrez un bloc pour le voir surligné sur le site.",general:"Ces réglages s'appliquent à toutes les pages.",seo:"Ce que Google affiche dans ses résultats : un titre court (60 caractères) et une description (155 caractères)."}[curTab];
+  if(help)body.appendChild(el("p",{class:"cms-help",text:help}));
+  sec.groups.forEach(function(g,gi){
+    var d=el("details",{class:"cms-group"});if(gi===0)d.open=true;
+    d.appendChild(el("summary",{text:g.t}));var inn=el("div",{class:"in"});
+    g.f.forEach(function(f){inn.appendChild(buildField(f));});d.appendChild(inn);
+    d.addEventListener("toggle",function(){if(d.open)flash(g.b);});
+    body.appendChild(d);
+  });
+}
+var MODE="artifact",TOKEN=null;
+function sizeOf(){return buildDoc("artifact",D).length;}
+function updateFoot(){
+  if(!cms)return;var st=cms.querySelector(".cms-status"),pub=cms.querySelector(".cms-pub"),rv=cms.querySelector(".cms-revert");
+  st.textContent=dirty?"Modifications non publiées":"Tout est publié";st.classList.toggle("dirty",dirty);pub.disabled=!dirty;rv.hidden=!dirty;
+  var m=cms.querySelector(".cms-meter"),ml=cms.querySelector(".cms-msize");
+  if(MODE!=="artifact"){m.hidden=true;ml.hidden=true;return;}
+  var mb=sizeOf()/1048576;
+  m.firstChild.style.width=Math.min(100,mb/15*100)+"%";m.firstChild.style.background=mb>12?"#B42318":"";ml.textContent="Poids du site : "+mb.toFixed(1)+" Mo sur 15 Mo"+(mb>12?" · allégez les images":"");
+}
+function buildShell(){
+  cms=el("aside",{class:"cms","aria-label":"Éditeur du site"});
+  cms.innerHTML='<div class="cms-top"><b>Éditeur du site</b><button type="button" class="cms-ibtn cms-out" title="Se déconnecter" aria-label="Se déconnecter" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg></button><button type="button" class="cms-ibtn cms-peek" title="Voir le site en grand" aria-label="Voir le site en grand">'+svgI("eye")+'</button><button type="button" class="cms-ibtn cms-close" title="Fermer" aria-label="Fermer l\'éditeur">'+svgI("x")+'</button></div><nav class="cms-nav"></nav><div class="cms-body"></div><div class="cms-foot"><div class="cms-meter"><i></i></div><span class="cms-help cms-msize" style="padding:0"></span><div class="cms-confirm" hidden></div><div class="row"><span class="cms-status"></span><button type="button" class="cms-ghost cms-revert" hidden>Annuler</button><button type="button" class="cms-pub">Publier</button></div></div>';
+  var nav=cms.querySelector(".cms-nav");
+  SCHEMA.forEach(function(s){var b=el("button",{type:"button","data-tab":s.id,text:s.label});b.onclick=function(){curTab=s.id;if(s.route&&routeOf()!==s.route)location.hash=s.route;renderPanel();cms.querySelector(".cms-body").scrollTop=0;};nav.appendChild(b);});
+  cms.querySelector(".cms-close").onclick=closeCMS;
+  cms.querySelector(".cms-peek").onclick=function(){cms.classList.toggle("peek");};
+  cms.querySelector(".cms-out").onclick=function(){try{localStorage.removeItem("viza-gh-token");}catch(x){}TOKEN=null;loginScreen();};
+  cms.querySelector(".cms-revert").onclick=function(){var c=cms.querySelector(".cms-confirm");c.hidden=false;c.innerHTML="";c.appendChild(el("span",{text:"Annuler toutes les modifications non publiées ?"}));var r=el("div",{class:"row"}),y=el("button",{type:"button",class:"cms-sbtn danger",text:"Oui, tout annuler"}),n=el("button",{type:"button",class:"cms-sbtn",text:"Non"});y.onclick=function(){D=JSON.parse(JSON.stringify(PUBLISHED));c.hidden=true;changed();renderPanel();};n.onclick=function(){c.hidden=true;};r.appendChild(y);r.appendChild(n);c.appendChild(r);};
+  cms.querySelector(".cms-pub").onclick=askPublish;
+  document.getElementById("cms-root").appendChild(cms);
+}
+function setLocked(locked){cms.querySelector(".cms-nav").hidden=locked;cms.querySelector(".cms-foot").hidden=locked;cms.querySelector(".cms-out").hidden=locked||MODE!=="github";}
+function openCMS(){
+  if(!cms)buildShell();
+  cms.hidden=false;cms.classList.remove("peek");document.body.classList.add("cms-on");
+  if(MODE==="github"&&!TOKEN){loginScreen();return;}
+  if(MODE==="github"&&!cms._synced){syncLatest();return;}
+  var sec=SCHEMA.filter(function(s){return s.route===routeOf();})[0];curTab=sec?sec.id:curTab;
+  setLocked(false);renderPanel();updateFoot();
+}
+function closeCMS(){if(cms){cms.hidden=true;document.body.classList.remove("cms-on");}}
+
+/* ---------- Hébergement GitHub (site autonome) ---------- */
+function repoPath(){var d=PUBLISHED.deploy||{};return "/repos/"+d.owner+"/"+d.repo;}
+function branch(){return (PUBLISHED.deploy&&PUBLISHED.deploy.branch)||"main";}
+function gh(method,path,body){
+  return fetch("https://api.github.com"+path,{method:method,cache:"no-store",headers:{"Authorization":"Bearer "+TOKEN,"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"},body:body?JSON.stringify(body):undefined})
+  .then(function(r){if(!r.ok){var er=new Error("GitHub "+r.status);er.status=r.status;throw er;}return r.status===204?null:r.json();});
+}
+function ghMsg(err){var s=err&&err.status;return s===401?"Jeton invalide ou expiré. Créez-en un nouveau.":s===403?"Ce jeton n'a pas le droit d'écrire sur le dépôt (permission « Contents : Read and write »).":s===404?"Dépôt introuvable, ou le jeton n'y a pas accès.":s===409||s===422?"Le site a changé entre-temps. Fermez l'éditeur, rechargez la page et réessayez.":"Connexion impossible. Vérifiez votre connexion Internet et réessayez.";}
+function loginScreen(err){
+  setLocked(true);var body=cms.querySelector(".cms-body"),dep=PUBLISHED.deploy||{};body.innerHTML="";
+  var box=el("div",{class:"cms-group"}),inn=el("div",{class:"in",style:"padding-top:16px"});box.appendChild(inn);
+  inn.appendChild(el("b",{text:"Connexion à l'hébergement",style:"font-family:var(--display);font-size:20px"}));
+  inn.appendChild(el("p",{class:"hint",text:"Le CMS enregistre vos modifications sur le dépôt GitHub "+dep.owner+"/"+dep.repo+", qui héberge le site. Collez votre jeton d'accès GitHub. Il reste uniquement dans ce navigateur."}));
+  var f=el("div",{class:"cms-f"});f.appendChild(el("label",{for:"gh-tok",text:"Jeton d'accès GitHub"}));
+  var inp=el("input",{type:"password",id:"gh-tok",autocomplete:"off",placeholder:"github_pat_…",style:"width:100%;font:inherit;font-size:15px;background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px"});f.appendChild(inp);inn.appendChild(f);
+  var er=el("p",{class:"hint",style:"color:#B42318;font-weight:600",text:err||""});inn.appendChild(er);
+  var go=el("button",{type:"button",class:"cms-pub",text:"Se connecter"});inn.appendChild(go);
+  var help=el("p",{class:"hint"});help.innerHTML='Pas encore de jeton ? Créez-le sur <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com › Fine-grained tokens</a> : accès au seul dépôt <b>'+e(dep.repo)+'</b>, permission <b>Contents : Read and write</b>.';inn.appendChild(help);
+  function tryLogin(){var t=inp.value.trim();if(!t){er.textContent="Collez votre jeton.";return;}TOKEN=t;go.disabled=true;go.textContent="Vérification…";
+    gh("GET",repoPath()).then(function(j){if(!j.permissions||!j.permissions.push){var x=new Error("ro");x.status=403;throw x;}try{localStorage.setItem("viza-gh-token",t);}catch(x){}cms._synced=false;openCMS();})
+    .catch(function(x){TOKEN=null;loginScreen(ghMsg(x));});}
+  go.onclick=tryLogin;inp.addEventListener("keydown",function(ev){if(ev.key==="Enter")tryLogin();});
+  body.appendChild(box);setTimeout(function(){inp.focus();},50);
+}
+function b64utf8(s){var bin=atob(s.replace(/\s/g,"")),u=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return new TextDecoder().decode(u);}
+function syncLatest(){
+  setLocked(true);var body=cms.querySelector(".cms-body");body.innerHTML='<p class="cms-help">Chargement de la dernière version du site…</p>';
+  gh("GET",repoPath()+"/contents/index.html?ref="+encodeURIComponent(branch())).then(function(f){
+    var html=b64utf8(f.content),doc=new DOMParser().parseFromString(html,"text/html"),node=doc.getElementById("viza-data");
+    if(node){var latest=JSON.parse(node.textContent);var wasDirty=dirty;PUBLISHED=latest;if(!wasDirty)D=JSON.parse(JSON.stringify(latest));dirty=JSON.stringify(D)!==JSON.stringify(PUBLISHED);renderAll(true);}
+    cms._synced=true;openCMS();
+  }).catch(function(x){if(x.status===401){TOKEN=null;try{localStorage.removeItem("viza-gh-token");}catch(y){}loginScreen(ghMsg(x));return;}body.innerHTML="";body.appendChild(el("p",{class:"cms-help",text:ghMsg(x)}));var r=el("button",{type:"button",class:"cms-sbtn",text:"Réessayer"});r.onclick=syncLatest;body.appendChild(r);});
+}
+function ghPublish(){
+  var data=JSON.parse(JSON.stringify(D)),jobs=[],ups={};
+  (function walk(o){Object.keys(o).forEach(function(k){var v=o[k];if(typeof v==="string"&&/^data:image\//.test(v))jobs.push({o:o,k:k,v:v});else if(v&&typeof v==="object")walk(v);});})(data);
+  return Promise.all(jobs.map(function(j){
+    var b64=j.v.split(",")[1],ext=/^data:image\/png/.test(j.v)?"png":"jpg";
+    return crypto.subtle.digest("SHA-1",new TextEncoder().encode(b64)).then(function(h){var hex=[].map.call(new Uint8Array(h),function(x){return("0"+x.toString(16)).slice(-2);}).join("").slice(0,16);var p="images/cms/"+hex+"."+ext;j.o[j.k]=p;IMGMAP[p]=j.v;ups[p]=b64;});
+  })).then(function(){
+    var html=buildDoc("site",data),R0=repoPath(),br=branch(),head,base;
+    return gh("GET",R0+"/git/ref/heads/"+br).then(function(ref){head=ref.object.sha;return gh("GET",R0+"/git/commits/"+head);})
+    .then(function(c){base=c.tree.sha;return Promise.all(Object.keys(ups).map(function(p){return gh("POST",R0+"/git/blobs",{content:ups[p],encoding:"base64"}).then(function(b){return{path:p,mode:"100644",type:"blob",sha:b.sha};});}));})
+    .then(function(items){items.push({path:"index.html",mode:"100644",type:"blob",content:html});return gh("POST",R0+"/git/trees",{base_tree:base,tree:items});})
+    .then(function(t){return gh("POST",R0+"/git/commits",{message:"Mise à jour du site depuis le CMS",tree:t.sha,parents:[head]});})
+    .then(function(c){return gh("PATCH",R0+"/git/refs/heads/"+br,{sha:c.sha});})
+    .then(function(){D=data;PUBLISHED=JSON.parse(JSON.stringify(data));return data;});
+  });
+}
+function askPublish(){
+  var c=cms.querySelector(".cms-confirm");c.hidden=false;c.innerHTML="";
+  c.appendChild(el("span",{text:MODE==="github"?"Publier ? Le site sera mis à jour pour tous les visiteurs d'ici une à deux minutes.":"Publier ? Le site sera mis à jour pour tous les visiteurs, au même lien."}));
+  var r=el("div",{class:"row"}),y=el("button",{type:"button",class:"cms-pub",text:"Oui, publier"}),n=el("button",{type:"button",class:"cms-ghost",text:"Pas encore"});
+  n.onclick=function(){c.hidden=true;};
+  y.onclick=function(){
+    if(MODE==="github"){
+      y.disabled=true;y.textContent="Publication…";
+      ghPublish().then(function(){try{localStorage.removeItem("viza-cms-draft");}catch(x){}changed();renderPanel();c.innerHTML="";c.appendChild(el("span",{text:"Publié. Le site en ligne sera à jour d'ici une à deux minutes (pensez à actualiser la page)."}));setTimeout(function(){c.hidden=true;},9000);})
+      .catch(function(x){c.innerHTML="";c.appendChild(el("span",{text:ghMsg(x)}));});
+      return;
+    }
+    var mb=sizeOf()/1048576;if(mb>15.5){c.querySelector("span").textContent="Le site dépasse 15 Mo : retirez ou remplacez quelques images lourdes avant de publier.";return;}
+    y.disabled=true;y.textContent="Publication…";
+    artifactNS.publish(buildDoc("artifact",D)).then(function(){try{localStorage.removeItem("viza-cms-draft");}catch(x){}c.innerHTML="<span>Publié. Le site se recharge…</span>";}).catch(function(err){
+      var code=err&&err.code,msg={conflict:"Une autre version vient d'être publiée. Le site se recharge ; vos modifications restent en brouillon, cliquez sur « Reprendre ».",not_writer:"Ce compte ne peut pas modifier ce site.",not_granted:"Ce compte ne peut pas modifier ce site.",too_large:"Le site est trop lourd : allégez les images.",rate_limited:"Trop de publications rapprochées : réessayez dans une minute."}[code]||"La publication a échoué. Réessayez dans un instant.";
+      c.innerHTML="";c.appendChild(el("span",{text:msg}));
+    });
+  };
+  r.appendChild(y);r.appendChild(n);c.appendChild(r);
+}
+function buildDoc(mode,d){
+  var prevLive=LIVE;LIVE=false;
+  try{
+  var seo=d.seo.accueil,url=(d.deploy&&d.deploy.url)||"";
+  var metas='<meta name="description" content="'+e(seo.description)+'">\n<meta property="og:type" content="website">\n<meta property="og:locale" content="fr_CI">\n<meta property="og:site_name" content="'+e(d.seo.siteName)+'">\n<meta property="og:title" content="'+e(seo.title)+'">\n<meta property="og:description" content="'+e(seo.description)+'">\n<meta name="theme-color" content="#151A22">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap">\n';
+  var css=document.getElementById("site-css").outerHTML;
+  var data='<script type="application/json" id="viza-data">'+JSON.stringify(d).replace(/</g,"\\u003c")+'<\/script>';
+  var ld='<script type="application/ld+json" id="viza-ld">'+V.jsonld(d)+'<\/script>';
+  var sprite=document.getElementById("sprite").outerHTML;
+  var body='<header class="top" id="top">'+V.header(d)+'</header>\n<div class="drawer" id="drawer" aria-hidden="true">'+V.drawer(d)+'</div>\n<main id="pages">'+V.pages(d).replace('class="page" data-route="accueil"','class="page on" data-route="accueil"')+'</main>\n<footer id="foot">'+V.footer(d)+'</footer>\n<a class="fab" id="fab" href="'+e(wa(d,d.site.waDefault))+'" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>\n<div id="cms-root"></div>\n';
+  var app='<script id="app">'+document.getElementById("app").textContent+'<\/script>';
+  var reset=':root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}';
+  if(mode==="site"){
+    var extra=(url?'<link rel="canonical" href="'+e(url)+'">\n<meta property="og:url" content="'+e(url)+'">\n<meta property="og:image" content="'+e(url)+'images/og.png">\n':'')+'<meta name="twitter:card" content="summary_large_image">\n<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="apple-touch-icon" href="images/icon-180.png">\n';
+    return '<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n<title>'+e(seo.title)+'</title>\n'+metas+extra+'<style>'+reset+'</style>\n'+css+'\n'+ld+'\n</head>\n<body>\n'+data+'\n'+sprite+'\n'+body+app+'\n</body>\n</html>\n';
+  }
+  return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>'+reset+'</style></head><body><title>VIZA Abidjan</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n'+metas+css+'\n'+ld+'\n'+data+'\n'+sprite+'\n'+body+app+'</body></html>';
+  }finally{LIVE=prevLive;}
+}
+window.__vizaBuild=function(m){return buildDoc(m,D);};
+function addOpenButton(){
+  if(document.querySelector(".cms-open-btn"))return;
+  var b=el("button",{type:"button",class:"cms-open-btn","aria-label":"Modifier le site"},svgI("pen")+"<span>Modifier le site</span>");
+  b.onclick=openCMS;document.body.appendChild(b);
+  try{if(localStorage.getItem("viza-cms-draft"))b.appendChild(el("i",{class:"dot",title:"Brouillon non publié"}));}catch(x){}
+}
+
+/* Accès à l'éditeur : seulement pour les personnes autorisées à modifier le site */
+if(window.claude&&typeof window.claude.use==="function"){
+  Promise.all([window.claude.use("artifact"),window.claude.use("user")]).then(function(r){
+    artifactNS=r[0];var user=r[1];
+    if(!artifactNS||!user)return;
+    return user.canEdit().then(function(ok){if(ok)addOpenButton();});
+  }).catch(function(){});
+}else if(PUBLISHED.deploy&&PUBLISHED.deploy.repo){
+  MODE="github";
+  try{TOKEN=localStorage.getItem("viza-gh-token");}catch(x){}
+  if(TOKEN||/[?&]admin\b/.test(location.search))addOpenButton();
+}
+})();
+</script>
+</body>
+</html>

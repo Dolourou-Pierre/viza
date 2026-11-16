@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dolourou-pierre.github.io/viza/sitemap.xml
