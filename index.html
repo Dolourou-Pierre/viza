@@ -743,22 +743,24 @@ function updateFoot(){
 }
 function buildShell(){
   cms=el("aside",{class:"cms","aria-label":"Éditeur du site"});
-  cms.innerHTML='<div class="cms-top"><b>Éditeur du site</b><button type="button" class="cms-ibtn cms-out" title="Se déconnecter" aria-label="Se déconnecter" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg></button><button type="button" class="cms-ibtn cms-peek" title="Voir le site en grand" aria-label="Voir le site en grand">'+svgI("eye")+'</button><button type="button" class="cms-ibtn cms-close" title="Fermer" aria-label="Fermer l\'éditeur">'+svgI("x")+'</button></div><nav class="cms-nav"></nav><div class="cms-body"></div><div class="cms-foot"><div class="cms-meter"><i></i></div><span class="cms-help cms-msize" style="padding:0"></span><div class="cms-confirm" hidden></div><div class="row"><span class="cms-status"></span><button type="button" class="cms-ghost cms-revert" hidden>Annuler</button><button type="button" class="cms-pub">Publier</button></div></div>';
+  cms.innerHTML='<div class="cms-top"><b>Éditeur du site</b><button type="button" class="cms-ibtn cms-key" title="Mot de passe" aria-label="Changer le mot de passe" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/></svg></button><button type="button" class="cms-ibtn cms-out" title="Se déconnecter" aria-label="Se déconnecter" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg></button><button type="button" class="cms-ibtn cms-peek" title="Voir le site en grand" aria-label="Voir le site en grand">'+svgI("eye")+'</button><button type="button" class="cms-ibtn cms-close" title="Fermer" aria-label="Fermer l\'éditeur">'+svgI("x")+'</button></div><nav class="cms-nav"></nav><div class="cms-body"></div><div class="cms-foot"><div class="cms-meter"><i></i></div><span class="cms-help cms-msize" style="padding:0"></span><div class="cms-confirm" hidden></div><div class="row"><span class="cms-status"></span><button type="button" class="cms-ghost cms-revert" hidden>Annuler</button><button type="button" class="cms-pub">Publier</button></div></div>';
   var nav=cms.querySelector(".cms-nav");
   SCHEMA.forEach(function(s){var b=el("button",{type:"button","data-tab":s.id,text:s.label});b.onclick=function(){curTab=s.id;if(s.route&&routeOf()!==s.route)location.hash=s.route;renderPanel();cms.querySelector(".cms-body").scrollTop=0;};nav.appendChild(b);});
   cms.querySelector(".cms-close").onclick=closeCMS;
   cms.querySelector(".cms-peek").onclick=function(){cms.classList.toggle("peek");};
-  cms.querySelector(".cms-out").onclick=function(){try{localStorage.removeItem("viza-gh-token");}catch(x){}TOKEN=null;loginScreen();};
+  cms.querySelector(".cms-out").onclick=function(){tokClear();TOKEN=null;cms._synced=false;loginScreen();};
+  cms.querySelector(".cms-key").onclick=function(){passwordScreen();};
   cms.querySelector(".cms-revert").onclick=function(){var c=cms.querySelector(".cms-confirm");c.hidden=false;c.innerHTML="";c.appendChild(el("span",{text:"Annuler toutes les modifications non publiées ?"}));var r=el("div",{class:"row"}),y=el("button",{type:"button",class:"cms-sbtn danger",text:"Oui, tout annuler"}),n=el("button",{type:"button",class:"cms-sbtn",text:"Non"});y.onclick=function(){D=JSON.parse(JSON.stringify(PUBLISHED));c.hidden=true;changed();renderPanel();};n.onclick=function(){c.hidden=true;};r.appendChild(y);r.appendChild(n);c.appendChild(r);};
   cms.querySelector(".cms-pub").onclick=askPublish;
   document.getElementById("cms-root").appendChild(cms);
 }
-function setLocked(locked){cms.querySelector(".cms-nav").hidden=locked;cms.querySelector(".cms-foot").hidden=locked;cms.querySelector(".cms-out").hidden=locked||MODE!=="github";}
+function setLocked(locked){cms.querySelector(".cms-nav").hidden=locked;cms.querySelector(".cms-foot").hidden=locked;cms.querySelector(".cms-out").hidden=locked||MODE!=="github";cms.querySelector(".cms-key").hidden=locked||MODE!=="github";}
 function openCMS(){
   if(!cms)buildShell();
   cms.hidden=false;cms.classList.remove("peek");document.body.classList.add("cms-on");
   if(MODE==="github"&&!TOKEN){loginScreen();return;}
   if(MODE==="github"&&!cms._synced){syncLatest();return;}
+  if(MODE==="github"&&cms._askPw){cms._askPw=false;if(!(PUBLISHED.deploy&&PUBLISHED.deploy.vault)){passwordScreen();return;}}
   var sec=SCHEMA.filter(function(s){return s.route===routeOf();})[0];curTab=sec?sec.id:curTab;
   setLocked(false);renderPanel();updateFoot();
 }
@@ -772,21 +774,65 @@ function gh(method,path,body){
   .then(function(r){if(!r.ok){var er=new Error("GitHub "+r.status);er.status=r.status;throw er;}return r.status===204?null:r.json();});
 }
 function ghMsg(err){var s=err&&err.status;return s===401?"Jeton invalide ou expiré. Créez-en un nouveau.":s===403?"Ce jeton n'a pas le droit d'écrire sur le dépôt (permission « Contents : Read and write »).":s===404?"Dépôt introuvable, ou le jeton n'y a pas accès.":s===409||s===422?"Le site a changé entre-temps. Fermez l'éditeur, rechargez la page et réessayez.":"Connexion impossible. Vérifiez votre connexion Internet et réessayez.";}
-function loginScreen(err){
-  setLocked(true);var body=cms.querySelector(".cms-body"),dep=PUBLISHED.deploy||{};body.innerHTML="";
-  var box=el("div",{class:"cms-group"}),inn=el("div",{class:"in",style:"padding-top:16px"});box.appendChild(inn);
-  inn.appendChild(el("b",{text:"Connexion à l'hébergement",style:"font-family:var(--display);font-size:20px"}));
-  inn.appendChild(el("p",{class:"hint",text:"Le CMS enregistre vos modifications sur le dépôt GitHub "+dep.owner+"/"+dep.repo+", qui héberge le site. Collez votre jeton d'accès GitHub. Il reste uniquement dans ce navigateur."}));
+var TK="viza-gh-token";
+function tokSave(t){try{sessionStorage.setItem(TK,t);}catch(x){}}
+function tokLoad(){try{return sessionStorage.getItem(TK);}catch(x){return null;}}
+function tokClear(){try{sessionStorage.removeItem(TK);}catch(x){}}
+function u8b64(u){var s="";for(var i=0;i<u.length;i++)s+=String.fromCharCode(u[i]);return btoa(s);}
+function b64u8(s){var b=atob(s),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u;}
+function vaultKey(pw,salt,n){return crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]).then(function(k){return crypto.subtle.deriveKey({name:"PBKDF2",salt:salt,iterations:n,hash:"SHA-256"},k,{name:"AES-GCM",length:256},false,["encrypt","decrypt"]);});}
+function vaultLock(token,pw){var salt=crypto.getRandomValues(new Uint8Array(16)),iv=crypto.getRandomValues(new Uint8Array(12)),n=600000;
+  return vaultKey(pw,salt,n).then(function(k){return crypto.subtle.encrypt({name:"AES-GCM",iv:iv},k,new TextEncoder().encode(token));}).then(function(c){return{v:1,n:n,s:u8b64(salt),i:u8b64(iv),c:u8b64(new Uint8Array(c))};});}
+function vaultOpen(v,pw){return vaultKey(pw,b64u8(v.s),v.n).then(function(k){return crypto.subtle.decrypt({name:"AES-GCM",iv:b64u8(v.i)},k,b64u8(v.c));}).then(function(p){return new TextDecoder().decode(p);});}
+var INPUT_CSS="width:100%;font:inherit;font-size:15px;background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px";
+function panel(title,text){setLocked(true);var body=cms.querySelector(".cms-body");body.innerHTML="";var box=el("div",{class:"cms-group"}),inn=el("div",{class:"in",style:"padding-top:16px"});box.appendChild(inn);inn.appendChild(el("b",{text:title,style:"font-family:var(--display);font-size:20px"}));if(text)inn.appendChild(el("p",{class:"hint",text:text}));body.appendChild(box);return inn;}
+function pwField(inn,id,label,ac){var f=el("div",{class:"cms-f"});f.appendChild(el("label",{for:id,text:label}));var i=el("input",{type:"password",id:id,autocomplete:ac||"current-password",style:INPUT_CSS});f.appendChild(i);inn.appendChild(f);return i;}
+function verifyToken(t){TOKEN=t;return gh("GET",repoPath()).then(function(j){if(!j.permissions||!j.permissions.push){var x=new Error("ro");x.status=403;throw x;}tokSave(t);return t;}).catch(function(x){TOKEN=null;throw x;});}
+function loginScreen(err,forceToken){
+  var dep=PUBLISHED.deploy||{};
+  if(dep.vault&&!forceToken){
+    var inn=panel("Connexion","Entrez votre mot de passe pour modifier le site. La connexion prend fin à la fermeture du navigateur.");
+    var pw=pwField(inn,"cms-pw","Mot de passe");
+    var er=el("p",{class:"hint",style:"color:#B42318;font-weight:600",text:err||""});inn.appendChild(er);
+    var go=el("button",{type:"button",class:"cms-pub",text:"Se connecter"});inn.appendChild(go);
+    var alt=el("button",{type:"button",class:"cms-sbtn",text:"Mot de passe oublié ? Se connecter avec un jeton GitHub"});alt.onclick=function(){loginScreen("",true);};inn.appendChild(alt);
+    var tries=0;
+    function tryPw(){if(!pw.value){er.textContent="Entrez votre mot de passe.";return;}go.disabled=true;go.textContent="Vérification…";
+      vaultOpen(dep.vault,pw.value).then(function(t){return verifyToken(t).catch(function(x){x.tokenFail=true;throw x;});})
+      .then(function(){cms._synced=false;openCMS();})
+      .catch(function(x){tries++;go.disabled=false;go.textContent="Se connecter";
+        if(x&&x.tokenFail){er.textContent=x.status===401?"Le jeton enregistré a expiré. Connectez-vous avec un nouveau jeton GitHub, puis recréez votre mot de passe.":ghMsg(x);return;}
+        er.textContent="Mot de passe incorrect.";pw.value="";if(tries>=3){go.disabled=true;setTimeout(function(){go.disabled=false;},5000*tries);}pw.focus();});}
+    go.onclick=tryPw;pw.addEventListener("keydown",function(ev){if(ev.key==="Enter")tryPw();});setTimeout(function(){pw.focus();},50);
+    return;
+  }
+  var inn2=panel("Connexion avec un jeton GitHub","Collez votre jeton d'accès GitHub. Vous pourrez ensuite choisir un mot de passe pour ne plus avoir à le coller.");
   var f=el("div",{class:"cms-f"});f.appendChild(el("label",{for:"gh-tok",text:"Jeton d'accès GitHub"}));
-  var inp=el("input",{type:"password",id:"gh-tok",autocomplete:"off",placeholder:"github_pat_…",style:"width:100%;font:inherit;font-size:15px;background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px"});f.appendChild(inp);inn.appendChild(f);
-  var er=el("p",{class:"hint",style:"color:#B42318;font-weight:600",text:err||""});inn.appendChild(er);
-  var go=el("button",{type:"button",class:"cms-pub",text:"Se connecter"});inn.appendChild(go);
-  var help=el("p",{class:"hint"});help.innerHTML='Pas encore de jeton ? Créez-le sur <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com › Fine-grained tokens</a> : accès au seul dépôt <b>'+e(dep.repo)+'</b>, permission <b>Contents : Read and write</b>.';inn.appendChild(help);
-  function tryLogin(){var t=inp.value.trim();if(!t){er.textContent="Collez votre jeton.";return;}TOKEN=t;go.disabled=true;go.textContent="Vérification…";
-    gh("GET",repoPath()).then(function(j){if(!j.permissions||!j.permissions.push){var x=new Error("ro");x.status=403;throw x;}try{localStorage.setItem("viza-gh-token",t);}catch(x){}cms._synced=false;openCMS();})
-    .catch(function(x){TOKEN=null;loginScreen(ghMsg(x));});}
-  go.onclick=tryLogin;inp.addEventListener("keydown",function(ev){if(ev.key==="Enter")tryLogin();});
-  body.appendChild(box);setTimeout(function(){inp.focus();},50);
+  var inp=el("input",{type:"password",id:"gh-tok",autocomplete:"off",placeholder:"github_pat_…",style:INPUT_CSS});f.appendChild(inp);inn2.appendChild(f);
+  var er2=el("p",{class:"hint",style:"color:#B42318;font-weight:600",text:err||""});inn2.appendChild(er2);
+  var go2=el("button",{type:"button",class:"cms-pub",text:"Se connecter"});inn2.appendChild(go2);
+  if(dep.vault){var back=el("button",{type:"button",class:"cms-sbtn",text:"Revenir au mot de passe"});back.onclick=function(){loginScreen();};inn2.appendChild(back);}
+  var help=el("p",{class:"hint"});help.innerHTML='Créer un jeton : <a href="https://github.com/settings/personal-access-tokens/new?name=CMS+VIZA&target_name='+encodeURIComponent(dep.owner||"")+'&expires_in=365&contents=write" target="_blank" rel="noopener">github.com › Fine-grained tokens</a>, accès au seul dépôt <b>'+e(dep.repo)+'</b>, permission <b>Contents : Read and write</b>.';inn2.appendChild(help);
+  function tryTok(){var t=inp.value.trim();if(!t){er2.textContent="Collez votre jeton.";return;}go2.disabled=true;go2.textContent="Vérification…";
+    verifyToken(t).then(function(){cms._synced=false;cms._askPw=true;openCMS();}).catch(function(x){loginScreen(ghMsg(x),true);});}
+  go2.onclick=tryTok;inp.addEventListener("keydown",function(ev){if(ev.key==="Enter")tryTok();});setTimeout(function(){inp.focus();},50);
+}
+function passwordScreen(intro){
+  var inn=panel(PUBLISHED.deploy&&PUBLISHED.deploy.vault?"Changer le mot de passe":"Choisir votre mot de passe",intro||"Ce mot de passe remplacera le jeton GitHub pour vous connecter, sur tous vos appareils. Au moins 12 caractères : mélangez mots, chiffres et symboles. Ne le communiquez à personne.");
+  var p1=pwField(inn,"cms-np1","Nouveau mot de passe","new-password"),p2=pwField(inn,"cms-np2","Confirmez le mot de passe","new-password");
+  var er=el("p",{class:"hint",style:"color:#B42318;font-weight:600"});inn.appendChild(er);
+  var row=el("div",{class:"row",style:"display:flex;gap:8px;flex-wrap:wrap"}),go=el("button",{type:"button",class:"cms-pub",text:"Enregistrer le mot de passe"}),skip=el("button",{type:"button",class:"cms-ghost",text:"Plus tard"});row.appendChild(go);row.appendChild(skip);inn.appendChild(row);
+  skip.onclick=function(){openCMS();};
+  go.onclick=function(){var a=p1.value,b=p2.value;
+    if(a.length<12){er.textContent="Au moins 12 caractères.";return;}
+    if(!/[^A-Za-z]/.test(a)){er.textContent="Ajoutez au moins un chiffre ou un symbole.";return;}
+    if(a!==b){er.textContent="Les deux mots de passe ne sont pas identiques.";return;}
+    go.disabled=true;go.textContent="Enregistrement…";er.textContent="";
+    vaultLock(TOKEN,a).then(function(v){var src=JSON.parse(JSON.stringify(PUBLISHED));src.deploy=src.deploy||{};src.deploy.vault=v;return ghPublish(src,true).then(function(){D.deploy=D.deploy||{};D.deploy.vault=v;});})
+    .then(function(){inn.innerHTML="";inn.appendChild(el("b",{text:"Mot de passe enregistré",style:"font-family:var(--display);font-size:20px"}));inn.appendChild(el("p",{class:"hint",text:"Dans une à deux minutes, vous pourrez vous connecter avec ce mot de passe sur n'importe quel appareil, depuis l'adresse du site suivie de ?admin."}));var ok=el("button",{type:"button",class:"cms-pub",text:"Continuer"});ok.onclick=function(){openCMS();};inn.appendChild(ok);})
+    .catch(function(x){go.disabled=false;go.textContent="Enregistrer le mot de passe";er.textContent=ghMsg(x);});
+  };
+  setTimeout(function(){p1.focus();},50);
 }
 function b64utf8(s){var bin=atob(s.replace(/\s/g,"")),u=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return new TextDecoder().decode(u);}
 function syncLatest(){
@@ -795,10 +841,10 @@ function syncLatest(){
     var html=b64utf8(f.content),doc=new DOMParser().parseFromString(html,"text/html"),node=doc.getElementById("viza-data");
     if(node){var latest=JSON.parse(node.textContent);var wasDirty=dirty;PUBLISHED=latest;if(!wasDirty)D=JSON.parse(JSON.stringify(latest));dirty=JSON.stringify(D)!==JSON.stringify(PUBLISHED);renderAll(true);}
     cms._synced=true;openCMS();
-  }).catch(function(x){if(x.status===401){TOKEN=null;try{localStorage.removeItem("viza-gh-token");}catch(y){}loginScreen(ghMsg(x));return;}body.innerHTML="";body.appendChild(el("p",{class:"cms-help",text:ghMsg(x)}));var r=el("button",{type:"button",class:"cms-sbtn",text:"Réessayer"});r.onclick=syncLatest;body.appendChild(r);});
+  }).catch(function(x){if(x.status===401){TOKEN=null;tokClear();loginScreen(ghMsg(x));return;}body.innerHTML="";body.appendChild(el("p",{class:"cms-help",text:ghMsg(x)}));var r=el("button",{type:"button",class:"cms-sbtn",text:"Réessayer"});r.onclick=syncLatest;body.appendChild(r);});
 }
-function ghPublish(){
-  var data=JSON.parse(JSON.stringify(D)),jobs=[],ups={};
+function ghPublish(src,keepDraft){
+  var data=JSON.parse(JSON.stringify(src||D)),jobs=[],ups={};
   (function walk(o){Object.keys(o).forEach(function(k){var v=o[k];if(typeof v==="string"&&/^data:image\//.test(v))jobs.push({o:o,k:k,v:v});else if(v&&typeof v==="object")walk(v);});})(data);
   return Promise.all(jobs.map(function(j){
     var b64=j.v.split(",")[1],ext=/^data:image\/png/.test(j.v)?"png":"jpg";
@@ -810,7 +856,7 @@ function ghPublish(){
     .then(function(items){items.push({path:"index.html",mode:"100644",type:"blob",content:html});return gh("POST",R0+"/git/trees",{base_tree:base,tree:items});})
     .then(function(t){return gh("POST",R0+"/git/commits",{message:"Mise à jour du site depuis le CMS",tree:t.sha,parents:[head]});})
     .then(function(c){return gh("PATCH",R0+"/git/refs/heads/"+br,{sha:c.sha});})
-    .then(function(){D=data;PUBLISHED=JSON.parse(JSON.stringify(data));return data;});
+    .then(function(){if(!keepDraft)D=data;PUBLISHED=JSON.parse(JSON.stringify(data));return data;});
   });
 }
 function askPublish(){
@@ -870,8 +916,9 @@ if(window.claude&&typeof window.claude.use==="function"){
   }).catch(function(){});
 }else if(PUBLISHED.deploy&&PUBLISHED.deploy.repo){
   MODE="github";
-  try{TOKEN=localStorage.getItem("viza-gh-token");}catch(x){}
-  if(TOKEN||/[?&]admin\b/.test(location.search))addOpenButton();
+  try{localStorage.removeItem("viza-gh-token");}catch(x){}
+  TOKEN=tokLoad();
+  if(/[?&]admin\b/.test(location.search))addOpenButton();
 }
 })();
 </script>
